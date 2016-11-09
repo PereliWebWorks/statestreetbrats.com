@@ -1,6 +1,6 @@
  <?php
  echo "attempting to mail";
- echo "<br/>";
+ echo "<br/><br/>";
  echo "is this working?";
 // the message
 $msg = "First line of text\nSecond line of text";
