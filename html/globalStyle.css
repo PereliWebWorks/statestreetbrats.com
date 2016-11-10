@@ -3,8 +3,21 @@
 
 body
 {
-  padding-top: 60px;
+  padding-top: 50px;
+  background-color: black;
 }
+
+#ninja-slider
+{
+  background-color: black;
+}
+
+#main-content
+{
+  background-color: white;
+  border-radius: 7px;
+}
+
 
 
 

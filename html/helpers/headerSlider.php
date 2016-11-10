@@ -13,7 +13,6 @@
                 "Caption 6",
                 "Caption 7",
             ); 
-
             for ($i = 1 ; $i <= $numImages ; $i++) :
             ?>
                 <li>
@@ -21,28 +20,6 @@
                     <div class="caption"><?= $captions[$i - 1] ?></div>
                 </li>
             <?php endfor ?>
-            <!--
-            <li>
-                <a class="ns-img" href="images/header_slider/1.jpg"></a>
-                <div class="caption">RESPONSIVE</div>
-            </li>
-            <li>
-                <a class="ns-img" href="img/2.jpg"></a>
-                <div class="caption">TOUCH·ENABLED</div>
-            </li>
-            <li>
-                <a class="ns-img" href="img/3.jpg"></a>
-                <div class="caption">VIDEO·AUDIO</div>
-            </li>
-            <li>
-                <a class="ns-img" href="img/4.jpg"></a>
-                <div class="caption">NON·JQUERY</div>
-            </li>
-            <li>
-                <a class="ns-img" href="img/5.jpg"></a>
-                <div class="caption">MOBILE·FRIENDLY</div>
-            </li>
-            -->
         </ul>
         <div class="navsWrapper">
             <div id="ninja-slider-prev"></div>
