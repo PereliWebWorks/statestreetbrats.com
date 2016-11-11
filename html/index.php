@@ -72,6 +72,7 @@
 
 <!-- Catering form -->
 <span class="row">
+	<h1 class="col-xs-12">Reserve State Street Brats for Your Party</h1>
 	<?php require_once("helpers/cateringForm.php"); ?>
 </span>
 
