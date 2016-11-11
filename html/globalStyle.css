@@ -68,3 +68,31 @@ body
     color: #fff;
 }
 
+
+
+
+/*Tabs*/
+#tabs li
+{
+  margin-left: 7%;
+  margin-right: 7%;
+  width: 19%;
+}
+
+#tabs li a
+{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
