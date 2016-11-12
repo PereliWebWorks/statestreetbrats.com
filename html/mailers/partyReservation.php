@@ -7,7 +7,7 @@
 	$sSBSubject = "New Party Reservation";
 
 	$customerMsg; //The message being sent to the customer
-	$customerEmail = $_POST["email"];
+	$customerEmail = $_POST["party-email"];
 	$customerSubject = "Thank you for requesting a party reservation with State Street Brats!";
 
 	$headers = "From: StateStreetBrats@104.236.118.215";
@@ -42,8 +42,9 @@
 	for ($i = 0 ; $i < sizeof($titles) ; $i++)
 	{
 		$valueName = $valueNames[$i];
+		$value = $_POST["party-" . $valueName];
 		$title = $titles[$i];
-		$info .= $title . ": " . $valueName . "\n";
+		$info .= $title . ": " . $value . "\n";
 	}
 	$sSBMsg .= $info;
 
