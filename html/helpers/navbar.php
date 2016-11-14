@@ -1,7 +1,7 @@
 <?php
   $links = array(
       "History" => "/history.php",
-      "Menus" => "/menus.php",
+      "Menu" => "/menu.php",
       "Catering" => "/catering.php",
       "FAQ" => "/faq.php",
       "Employment" => "/employment.php",

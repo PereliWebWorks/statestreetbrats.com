@@ -99,7 +99,6 @@ function submitPartyReservationForm()
 	{
 		$("#party-form-response").html("Your party reservation request has been sent.")
 			.removeClass("alert-danger").addClass("alert-success");
-		/*
 		$.ajax({
 			type: "POST",
 			url: "/mailers/partyReservation.php",
@@ -107,7 +106,6 @@ function submitPartyReservationForm()
 		}).done(function(data){
 			$("#response").html(data);
 		});
-		*/
 	}
 	else
 	{
