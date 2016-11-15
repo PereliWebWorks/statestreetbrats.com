@@ -16,5 +16,5 @@
 		<a href="https://www.pinterest.com/statestreetbrat/">
 			<img src="images/social_media_logos/pinterest.png" />
 		</a>
-	</div	>
+	</div>
 </div>

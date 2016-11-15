@@ -134,6 +134,12 @@ body
 }
 
 
+/*Bootstrap slider stuff*/
+.carousel-inner > .item {
+      width: 70%;
+      margin: auto;
+  }
+
 
 /*Home page*/
 #social-media-box img
