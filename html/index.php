@@ -7,59 +7,91 @@
 
 
 <span class="row">
-	<h2 class="col-xs-12 col-md-6 text-center">Come Socialize</h2>
-	<span class="col-xs-12 col-md-6 text-center">
-		<a href="https://www.facebook.com/statestreetbratswisco">
+	<span class="col-xs-1"></span>
+	<span class="col-xs-10 text-center">
+		<a href="https://www.facebook.com/statestreetbratswisco" class="col-xs-3 text-center">
 			<img src="images/social_media_logos/facebook.png" />
 		</a>
-		<a href="https://twitter.com/StateStBrats">
+		<a href="https://twitter.com/StateStBrats" class="col-xs-3 text-center">
 			<img src="images/social_media_logos/twitter.png" />
 		</a>
-		<a href="https://instagram.com/brat_man/">
+		<a href="https://instagram.com/brat_man/" class="col-xs-3 text-center">
 			<img src="images/social_media_logos/instagram.png" />
 		</a>
-		<a href="https://www.pinterest.com/statestreetbrat/">
+		<a href="https://www.pinterest.com/statestreetbrat/" class="col-xs-3 text-center">
 			<img src="images/social_media_logos/pinterest.png" />
 		</a>
 	</span>
+	<span class="col-xs-1"></span>
 </span>
 
-
+<hr />
 
 <span class="row">
 	<span class="col-xs-12">
 		<div class="yelp-slider">
 			<div>
-				<span class="yelp-review" data-review-id="DQ9SEb6KDHCtNy7CBt24Rg" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=yT9SF9ln9M3d1z-7IYMqBQ" rel="nofollow noopener">Mark C.</a>'s <a href="https://www.yelp.com/biz/state-street-brats-madison?hrid=DQ9SEb6KDHCtNy7CBt24Rg" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/L772e6l2Yd0DJEyCBxBNng" rel="nofollow noopener">State Street Brats</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script></span>
+				<i>
+					"Great place to stop for a sandwich with the family. Brats and burgers are always a hit at State Street Brats."
+				</i>
+				<br/>
+				<span>-Mark C.</span>
 			</div>
-
-			<!--
 			<div>
-				<span class="yelp-review" data-review-id="DQ9SEb6KDHCtNy7CBt24Rg" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=yT9SF9ln9M3d1z-7IYMqBQ" rel="nofollow noopener">Mark C.</a>'s <a href="https://www.yelp.com/biz/state-street-brats-madison?hrid=DQ9SEb6KDHCtNy7CBt24Rg" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/L772e6l2Yd0DJEyCBxBNng" rel="nofollow noopener">State Street Brats</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script></span>
-			</div>-->
-
-			<div>
-				<span class="yelp-review" data-review-id="F9pHAJsEs3Cz2Ub_VbnsPw" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=8qOpM1Iyn32RsNFfyelhOA" rel="nofollow noopener">Alix J.</a>'s <a href="https://www.yelp.com/biz/state-street-brats-madison?hrid=F9pHAJsEs3Cz2Ub_VbnsPw" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/L772e6l2Yd0DJEyCBxBNng" rel="nofollow noopener">State Street Brats</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script></span>
+				<i>
+					"State Street Brat is amazing!"
+				</i>
+				<br/>
+				<span>-Alix J. </span>
 			</div>
-
 			<div>
-				<span class="yelp-review" data-review-id="ZATNg1NK-VG-meYoeWKahA" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=QYCvBz2SqSb1B6B8JNp0_Q" rel="nofollow noopener">Faheem B.</a>'s <a href="https://www.yelp.com/biz/state-street-brats-madison?hrid=ZATNg1NK-VG-meYoeWKahA" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/L772e6l2Yd0DJEyCBxBNng" rel="nofollow noopener">State Street Brats</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script></span>
+				<i>
+					"I love State Street Brat's! The Food is great, try the Bacon Cheddar Curds. The staff is friendly, knowledgeable and quick."
+				</i>
+				<br/>
+				<span>-Faheem B.</span>
 			</div>
-
 			<div>
-				<span class="yelp-review" data-review-id="TUX7fO94VOctRLSC9hYs-A" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=FsVPz2u-d2qW43mkDJ0-Cg" rel="nofollow noopener">Wilkins K.</a>'s <a href="https://www.yelp.com/biz/state-street-brats-madison?hrid=TUX7fO94VOctRLSC9hYs-A" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/L772e6l2Yd0DJEyCBxBNng" rel="nofollow noopener">State Street Brats</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script></span>
+				<i>
+					"Delicious!! Brauts were cooked well and tasted great!"
+				</i>
+				<br/>
+				<span>-Nick R.</span>
 			</div>
-
 			<div>
-				<span class="yelp-review" data-review-id="hn7ZzzgaR6HT74OVY7-wtw" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=rgl09pkXcaM7_rvT_eIW_w" rel="nofollow noopener">Brian H.</a>'s <a href="https://www.yelp.com/biz/state-street-brats-madison?hrid=hn7ZzzgaR6HT74OVY7-wtw" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/L772e6l2Yd0DJEyCBxBNng" rel="nofollow noopener">State Street Brats</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script></span>
+				<i>
+				"Located smack dab in the epicenter of food, folks and fun, on the UW-Madison campus, Brats delights with ample table space, an outdoor patio and the best curds and red brats anywhere."
+				</i>
+				<br/>
+				<span>-Wilkins K.</span>
 			</div>
-
 			<div>
-				<span class="yelp-review" data-review-id="xW78nOJrqsguYFPMM3ve1A" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=ZakXMnPmK6GESBS-zC_eAg" rel="nofollow noopener">Jon G.</a>'s <a href="https://www.yelp.com/biz/state-street-brats-madison?hrid=xW78nOJrqsguYFPMM3ve1A" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/L772e6l2Yd0DJEyCBxBNng" rel="nofollow noopener">State Street Brats</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script></span>
+				<i>
+				"The brats are always great.  Love the split-grilled taste, and the lightly toasted buns (thanks for not cutting corners on those!)"
+				</i>
+				<br/>
+				<span>-Bobby B.</span>
 			</div>
-
 			<div>
-				<span class="yelp-review" data-review-id="jZ54BNfZFAjwLPZ3acTyUA" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=yDuzFkygiousbQBvOgrgtg" rel="nofollow noopener">Joel M.</a>'s <a href="https://www.yelp.com/biz/state-street-brats-madison?hrid=jZ54BNfZFAjwLPZ3acTyUA" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/L772e6l2Yd0DJEyCBxBNng" rel="nofollow noopener">State Street Brats</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script></span>
+				<i>
+				"The best sports bar in America."
+				</i>
+				<br/>
+				<span>-Michael P.</span>
+			</div>
+			<div>
+				<i>
+				"I suggest this restaurant to anyone who visits Madison. Make sure you try out the cheese curds and get there early for the cheap beer."
+				</i>
+				<br/>
+				<span>-John G.</span>
+			</div>
+			<div>
+				<i>
+				"What are you doing sitting at home reading this when you could be at this place having a brat basket?  Get over yourself and go have a brat."
+				</i>
+				<br/>
+				<span>-Joel M.</span>
 			</div>
 		</div>
 	</span>
@@ -71,7 +103,9 @@
   <script type="text/javascript">
     $(document).on('ready', function() {
       $(".yelp-slider").slick({
-      	dots: true
+      	dots: true,
+      	autoplay: true,
+      	autoplaySpeed: 10000
       });
       
     });

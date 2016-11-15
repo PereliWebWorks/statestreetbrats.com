@@ -75,8 +75,14 @@ body
 /*Slick slider stuff*/
 .yelp-slider {
         width: 50%;
+        height: 5em;
         margin: 100px auto;
     }
+
+.yelp-slider>div {
+  font-weight: bold;
+  font-size: 1.1em;
+}
 
 .slick-slide {
   margin: 0px 20px;
@@ -86,6 +92,7 @@ body
 .slick-next:before {
     color: black;
 }
+
 
 
 
