@@ -5,6 +5,7 @@ body
 {
   padding-top: 50px;
   background-color: black;
+  background-image: url("images/bricks.jpg");
 }
 
 .main-content
@@ -19,6 +20,12 @@ body
 
 /*Navbar*/
 
+
+
+#main-nav-bar li a:hover{
+  color: rgb(205, 0, 30);
+}
+
 .navbar-brand{
   width: 110px;
   padding: 10px;
@@ -28,6 +35,7 @@ body
   width: 100%;
   height: auto;
 }
+
 
 
 
@@ -75,7 +83,7 @@ body
 /*Slick slider stuff*/
 .yelp-slider {
         width: 50%;
-        height: 5em;
+        height: 7em;
         margin: 100px auto;
     }
 
