@@ -7,15 +7,10 @@ body
   background-color: black;
 }
 
-#ninja-slider
-{
-  background-color: black;
-}
-
-#main-content
+.main-content
 {
   background-color: white;
-  border-radius: 7px;
+  margin-top: -10px;
 }
 
 
@@ -68,6 +63,29 @@ body
     color: #fff;
 }
 
+/*Custom ninja slider stuff*/
+
+#ninja-slider
+{
+  background-color: black;
+  margin-bottom: -40px;
+}
+
+
+/*Slick slider stuff*/
+.yelp-slider {
+        width: 50%;
+        margin: 100px auto;
+    }
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
 
 
 

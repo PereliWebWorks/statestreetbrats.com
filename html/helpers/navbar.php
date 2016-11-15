@@ -3,6 +3,7 @@
       "History" => "/history.php",
       "Menu" => "/menu.php",
       "Catering" => "/catering.php",
+      "Party Reservations" => "/party-reservations.php",
       "FAQ" => "/faq.php",
       "Employment" => "/employment.php",
       "Contact" => "/contact.php"
