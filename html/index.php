@@ -1,34 +1,17 @@
 <?php require_once("helpers/globalHead.php"); ?>
 
+<?php require_once("helpers/socialMediaIcons.php"); ?>
 <?php require_once("helpers/headerSlider.php"); ?>
+
 
 <?php require_once ("helpers/contentStart.php"); ?>
 <!-- CONTENT -->
 
 
-<span class="row">
-	<span class="col-xs-1"></span>
-	<span class="col-xs-10 text-center">
-		<a href="https://www.facebook.com/statestreetbratswisco" class="col-xs-3 text-center">
-			<img src="images/social_media_logos/facebook.png" />
-		</a>
-		<a href="https://twitter.com/StateStBrats" class="col-xs-3 text-center">
-			<img src="images/social_media_logos/twitter.png" />
-		</a>
-		<a href="https://instagram.com/brat_man/" class="col-xs-3 text-center">
-			<img src="images/social_media_logos/instagram.png" />
-		</a>
-		<a href="https://www.pinterest.com/statestreetbrat/" class="col-xs-3 text-center">
-			<img src="images/social_media_logos/pinterest.png" />
-		</a>
-	</span>
-	<span class="col-xs-1"></span>
-</span>
-
-<hr />
 
 <span class="row">
-	<span class="col-xs-12">
+	<span class="col-md-3 xs-hidden"></span>
+	<span class="col-xs-12 col-md-6">
 		<div class="yelp-slider">
 			<div>
 				<i>
@@ -95,6 +78,7 @@
 			</div>
 		</div>
 	</span>
+	<span class="col-md-3 xs-hidden"></span>
 </span>
 
 
