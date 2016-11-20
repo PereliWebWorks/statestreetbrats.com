@@ -1,5 +1,5 @@
 
 		</span><!-- end content -->
-		<span class="col-xs-1"></span>
+		<span class="col-xs-0"></span>
 	</span><!-- end row -->
 </span><!-- end container -->
