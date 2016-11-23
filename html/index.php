@@ -12,13 +12,13 @@
 <span class="row">
 	<span class="col-md-8 col-xs-12">
 		<div class="row bubble">
-			<span class="col-md-4 hidden-xs">
+			<span class="col-md-4 hidden-xs hidden-sm">
 				<img src="images/employeeWithLiquor.jpg" class="img-responsive body-image" />
 			</span>
 			<span class="col-md-8 col-xs-12">
 				<img src="images/vectors/ribbons_badges/banner1.png" class="col-xs-12 img-responsive banner-image" />
 				<div class="sub-bubble">
-					<h2 class="col-xs-12 text-center">Open 10am to 2am</h2>
+					<h2 class="col-xs-12 text-center">Open 11am to 2am</h2>
 					<span class="col-xs-12">
 						<a href="#" class="col-xs-6 text-center">
 							<h3 class="text-center">Menu</h3>
@@ -32,63 +32,99 @@
 		</div>
 
 		<div class="row bubble">
-			<h1 class="col-xs-12 text-center">Today's Specials</h1>
-			<ul class="col-md-8 col-xs-12">
-				<li><h4 class="">Special 1</h4></li>
-				<li><h4 class="">Special 2</h4></li>
-				<li><h4 class="">Special 3</h4></li>
-			</ul>
-			<img src="images/bratman_reversed.png" class="col-md-4 hidden-xs img-responsive" />
+			<span class="col-md-9 col-xs-12">
+				<h1 class="col-xs-12 text-center">Today's Specials</h1>
+				<ul class="col-xs-12">
+					<li><h4 class="">Special 1</h4></li>
+					<li><h4 class="">Special 2</h4></li>
+					<li><h4 class="">Special 3</h4></li>
+				</ul>
+			</span>
+			<img src="images/bratman_reversed.png" class="col-md-3 hidden-xs hidden-sm img-responsive" />
 		</div>
 
 
 		<div class="row bubble">
-			<h1 class="col-xs-12 text-center">Madison Loves State Street Brats</h1>
-			<img src="images/BuckyBadger.png" class="col-md-4 hidden-xs img-responsive" />
-			<div class="col-md-8 col-xs-12 slider-container">
-				<div id="review-slider">
-					<ul>
-					<?php
-						$quotes = array(
-							"Great place to stop for a sandwich with the family. Brats and burgers are always a hit at State Street Brats.",
-							"State Street Brat is amazing!",
-							"I love State Street Brat's! The Food is great, try the Bacon Cheddar Curds. The staff is friendly, knowledgeable and quick.",
-							"Delicious!! Brauts were cooked well and tasted great!",
-							"Brats delights with ample table space, an outdoor patio and the best curds and red brats anywhere.",
-							"The brats are always great.  Love the split-grilled taste, and the lightly toasted buns (thanks for not cutting corners on those!)",
-							"The best sports bar in America.",
-							"I suggest this restaurant to anyone who visits Madison. Make sure you try out the cheese curds and get there early for the cheap beer.",
-							"What are you doing sitting at home reading this when you could be at this place having a brat basket?  Get over yourself and go have a brat."
-							);
-						$names = array(
-							"Mark C.",
-							"Alix J.",
-							"Faheem B.",
-							"Nick R.",
-							"Wilkins K.",
-							"Bobby B.",
-							"Michael P.",
-							"John G.",
-							"Joel M."
-							);
-						for ($i = 0 ; $i < sizeof($quotes) ; $i++) :
-						?>
-							<li class="review">
-								<i class="review-text">
-									<?= $quotes[$i] ?>
-								</i>
-								<br/>
-								<span class="review-name">
-									-<?= $names[$i] ?> 
-								</span>
-							</li>
-						<?php endfor ?>
-					</ul>
+			<img src="images/BuckyBadger.png" class="col-md-4 hidden-xs hidden-sm img-responsive" />
+			<span class="col-md-8 col-xs-12">
+				<h1 class="col-xs-12 text-center">Madison Loves State Street Brats</h1>
+				<div class="col-xs-12 slider-container">
+					<div id="review-slider">
+						<ul>
+						<?php
+							$quotes = array(
+								"Great place to stop for a sandwich with the family. Brats and burgers are always a hit at State Street Brats.",
+								"State Street Brat is amazing!",
+								"I love State Street Brat's! The Food is great, try the Bacon Cheddar Curds. The staff is friendly, knowledgeable and quick.",
+								"Delicious!! Brauts were cooked well and tasted great!",
+								"Brats delights with ample table space, an outdoor patio and the best curds and red brats anywhere.",
+								"The brats are always great.  Love the split-grilled taste, and the lightly toasted buns (thanks for not cutting corners on those!)",
+								"The best sports bar in America.",
+								"I suggest this restaurant to anyone who visits Madison. Make sure you try out the cheese curds and get there early for the cheap beer.",
+								"What are you doing sitting at home reading this when you could be at this place having a brat basket?  Get over yourself and go have a brat."
+								);
+							$names = array(
+								"Mark C.",
+								"Alix J.",
+								"Faheem B.",
+								"Nick R.",
+								"Wilkins K.",
+								"Bobby B.",
+								"Michael P.",
+								"John G.",
+								"Joel M."
+								);
+							for ($i = 0 ; $i < sizeof($quotes) ; $i++) :
+							?>
+								<li class="review">
+									<i class="review-text">
+										<?= $quotes[$i] ?>
+									</i>
+									<br/>
+									<span class="review-name">
+										-<?= $names[$i] ?> 
+									</span>
+								</li>
+							<?php endfor ?>
+						</ul>
+					</div>
 				</div>
-			</div>
+			</span>
+		</div>
+
+		<div class="row bubble">
+			<span class="col-md-6 col-xs-12">
+				<h2>603 State St</h2>
+				<h2>Madison, WI</h2>
+				<h2>608-255-5544</h2>
+			</span>
+			<span class="col-md-6 col-xs-12">
+				<div id="map" class="col-xs-12">
+				</div>
+				<script>
+			      var map;
+			       
+			      var myLatLong = {lat: 43.074943, lng: -89.395988};
+			      function initMap() {
+			        map = new google.maps.Map(document.getElementById('map'), {
+			          center: myLatLong,
+			          zoom: 15
+			        });
+
+			        var marker = new google.maps.Marker({
+			          position: myLatLong,
+			          map: map,
+			          title: 'State Street Brats'
+			        });
+			      }
+			    </script>
+			    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv7rEmfbNnGIymEysxReJXhoUS0jG-0r0&callback=initMap"
+			    async defer></script>
+			</span>
 		</div>
 
 	</span>
+
 
 
 
