@@ -21,10 +21,9 @@
     <link href="ninja_slider/ninja-slider.css" rel="stylesheet" type="text/css" />
     <script src="ninja_slider/ninja-slider.js" type="text/javascript"></script>
     
-    <!-- Slick slider -->
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-	<link rel="stylesheet" type="text/css" href="./slick/slick.css">
-	<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    <!-- unslider -->
+    <link href="unslider/unslider-master/dist/css/unslider.css" type="text/css" rel="stylesheet" />
+    <link href="unslider/unslider-master/dist/css/unslider-dots.css" type="text/css" rel="stylesheet" />
 
 	<!-- global custom syle -->
 	<link href="globalStyle.css" rel="stylesheet" type="text/css" />
