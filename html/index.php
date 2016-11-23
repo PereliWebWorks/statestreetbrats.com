@@ -33,86 +33,59 @@
 
 		<div class="row bubble">
 			<h1 class="col-xs-12 text-center">Today's Specials</h1>
-			<ul>
+			<ul class="col-md-8 col-xs-12">
 				<li><h4 class="">Special 1</h4></li>
 				<li><h4 class="">Special 2</h4></li>
 				<li><h4 class="">Special 3</h4></li>
 			</ul>
+			<img src="images/bratman_reversed.png" class="col-md-4 hidden-xs img-responsive" />
 		</div>
 
 
 		<div class="row bubble">
 			<h1 class="col-xs-12 text-center">Madison Loves State Street Brats</h1>
+			<img src="images/BuckyBadger.png" class="col-md-4 hidden-xs img-responsive" />
 			<div class="col-md-8 col-xs-12 slider-container">
 				<div id="review-slider">
 					<ul>
-						<li>
-							<i>
-								"Great place to stop for a sandwich with the family. Brats and burgers are always a hit at State Street Brats."
-							</i>
-							<br/>
-							<span>-Mark C.</span>
-						</li>
-						<li>
-							<i>
-								"State Street Brat is amazing!"
-							</i>
-							<br/>
-							<span>-Alix J. </span>
-						</li>
-						<li>
-							<i>
-								"I love State Street Brat's! The Food is great, try the Bacon Cheddar Curds. The staff is friendly, knowledgeable and quick."
-							</i>
-							<br/>
-							<span>-Faheem B.</span>
-						</li>
-						<li>
-							<i>
-								"Delicious!! Brauts were cooked well and tasted great!"
-							</i>
-							<br/>
-							<span>-Nick R.</span>
-						</li>
-						<li>
-							<i>
-							"Located smack dab in the epicenter of food, folks and fun, on the UW-Madison campus, Brats delights with ample table space, an outdoor patio and the best curds and red brats anywhere."
-							</i>
-							<br/>
-							<span>-Wilkins K.</span>
-						</li>
-						<li>
-							<i>
-							"The brats are always great.  Love the split-grilled taste, and the lightly toasted buns (thanks for not cutting corners on those!)"
-							</i>
-							<br/>
-							<span>-Bobby B.</span>
-						</li>
-						<li>
-							<i>
-							"The best sports bar in America."
-							</i>
-							<br/>
-							<span>-Michael P.</span>
-						</li>
-						<li>
-							<i>
-							"I suggest this restaurant to anyone who visits Madison. Make sure you try out the cheese curds and get there early for the cheap beer."
-							</i>
-							<br/>
-							<span>-John G.</span>
-						</li>
-						<li>
-							<i>
+					<?php
+						$quotes = array(
+							"Great place to stop for a sandwich with the family. Brats and burgers are always a hit at State Street Brats.",
+							"State Street Brat is amazing!",
+							"I love State Street Brat's! The Food is great, try the Bacon Cheddar Curds. The staff is friendly, knowledgeable and quick.",
+							"Delicious!! Brauts were cooked well and tasted great!",
+							"Brats delights with ample table space, an outdoor patio and the best curds and red brats anywhere.",
+							"The brats are always great.  Love the split-grilled taste, and the lightly toasted buns (thanks for not cutting corners on those!)",
+							"The best sports bar in America.",
+							"I suggest this restaurant to anyone who visits Madison. Make sure you try out the cheese curds and get there early for the cheap beer.",
 							"What are you doing sitting at home reading this when you could be at this place having a brat basket?  Get over yourself and go have a brat."
-							</i>
-							<br/>
-							<span>-Joel M.</span>
-						</li>
+							);
+						$names = array(
+							"Mark C.",
+							"Alix J.",
+							"Faheem B.",
+							"Nick R.",
+							"Wilkins K.",
+							"Bobby B.",
+							"Michael P.",
+							"John G.",
+							"Joel M."
+							);
+						for ($i = 0 ; $i < sizeof($quotes) ; $i++) :
+						?>
+							<li class="review">
+								<i class="review-text">
+									<?= $quotes[$i] ?>
+								</i>
+								<br/>
+								<span class="review-name">
+									-<?= $names[$i] ?> 
+								</span>
+							</li>
+						<?php endfor ?>
 					</ul>
 				</div>
 			</div>
-			<img src="images/BuckyBadger.png" class="col-md-4 hidden-xs img-responsive" />
 		</div>
 
 	</span>

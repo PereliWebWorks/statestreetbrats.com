@@ -2,7 +2,7 @@
 <?php require_once("helpers/contentStart.php"); ?>
 
 
-<span class="row">
+<span class="row bubble">
 	<h1 class="col-xs-12">Party Reservations</h1>
 	<h2 class="col-xs-12">Let Us Take Care of You</h2>
 	<div class="col-xs-12">
@@ -54,7 +54,7 @@
 
 
 <!-- Catering form -->
-<span class="row">
+<span class="row bubble">
 	<span class="col-md-6 col-xs-12">
 		<h1 class="col-xs-12">Reserve State Street Brats for Your Party</h1>
 		<?php require_once("helpers/partyReservationForm.php"); ?>

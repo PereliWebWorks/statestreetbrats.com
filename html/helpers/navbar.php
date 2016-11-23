@@ -12,7 +12,7 @@
   $currPage = $_SERVER["PHP_SELF"];
 ?>
 
-<nav class="navbar navbar-default navbar-fixed-top" id="main-nav-bar">
+<nav class="navbar navbar-inverse navbar-fixed-top" id="main-nav-bar">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
