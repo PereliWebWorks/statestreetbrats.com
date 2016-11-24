@@ -1,17 +1,16 @@
 <?php require_once("helpers/globalHead.php"); ?>
 
 <?php require_once("helpers/socialMediaIcons.php"); ?>
-<?php //require_once("helpers/headerSlider.php"); ?>
+<?php require_once("helpers/headerSlider.php"); ?>
 
 
 <?php require_once ("helpers/contentStart.php"); ?>
 <!-- CONTENT -->
 
-
 	
 <span class="row">
 	<span class="col-md-8 col-xs-12">
-		<div class="row bubble">
+		<div class="row bubble slide-module-bottom">
 			<span class="col-md-4 hidden-xs hidden-sm">
 				<img src="images/employeeWithLiquor.jpg" class="img-responsive body-image" />
 			</span>
@@ -31,20 +30,21 @@
 			</span>
 		</div>
 
-		<div class="row bubble">
+		<div class="row bubble slide-module-bottom">
+			<h1 class="col-xs-12 text-center">Today's Specials</h1>
 			<span class="col-md-9 col-xs-12">
-				<h1 class="col-xs-12 text-center">Today's Specials</h1>
-				<ul class="col-xs-12">
-					<li><h4 class="">Special 1</h4></li>
-					<li><h4 class="">Special 2</h4></li>
-					<li><h4 class="">Special 3</h4></li>
+				<span class="col-md-3 hidden-xs hidden-sm"></span>
+				<ul class="col-md-9 col-xs-12">
+					<li><h3 class="">Special 1</h3></li>
+					<li><h3 class="">Special 2</h3></li>
+					<li><h3 class="">Special 3</h3></li>
 				</ul>
 			</span>
 			<img src="images/bratman_reversed.png" class="col-md-3 hidden-xs hidden-sm img-responsive" />
 		</div>
 
 
-		<div class="row bubble">
+		<div class="row bubble slide-module-bottom">
 			<img src="images/BuckyBadger.png" class="col-md-4 hidden-xs hidden-sm img-responsive" />
 			<span class="col-md-8 col-xs-12">
 				<h1 class="col-xs-12 text-center">Madison Loves State Street Brats</h1>
@@ -92,7 +92,7 @@
 			</span>
 		</div>
 
-		<div class="row bubble">
+		<div class="row bubble slide-module-bottom">
 			<span class="col-md-6 col-xs-12">
 				<h2>603 State St</h2>
 				<h2>Madison, WI</h2>
@@ -128,7 +128,7 @@
 
 
 
-	<span class="col-md-4 hidden-xs">
+	<span class="col-md-4 hidden-xs slide-module-bottom">
 		<div class="bubble row">
 			            <a class="twitter-timeline"  href="https://twitter.com/search?q=%40statestbrats" data-widget-id="800423506945146880"
 			            data-chrome="transparent"

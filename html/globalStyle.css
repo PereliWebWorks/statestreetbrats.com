@@ -166,6 +166,48 @@ body
 
 
 
+
+
+/*Catering Page */
+#catering-form table{
+  color: #ddd;
+}
+
+#catering-form input{
+  color: black;
+}
+
+#catering-form td{
+  padding: .3em;
+  border-bottom: 1px solid gray;
+}
+
+
+#catering-form th{
+  text-align: center;
+  padding-top: 3em;
+}
+
+#catering-form .error{
+  background-color: rgba(200, 0, 0, .4);
+  color: #add;
+}
+
+
+#total-container{
+  font-size: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
 /*Menu page */
 #menu-image
 {

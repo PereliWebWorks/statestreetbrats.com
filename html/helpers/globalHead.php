@@ -25,6 +25,10 @@
     <link href="unslider/unslider-master/dist/css/unslider.css" type="text/css" rel="stylesheet" />
     <link href="unslider/unslider-master/dist/css/unslider-dots.css" type="text/css" rel="stylesheet" />
 
+    <!-- slide -->
+    <link href="slide/slide.css" type="text/css" rel="stylesheet" />
+    <script src="slide/slide.js"></script>
+
 	<!-- global custom syle -->
 	<link href="globalStyle.css" rel="stylesheet" type="text/css" />
 </head>
