@@ -49,7 +49,7 @@
 		<button type="reset" class="btn btn-warning">Reset</button>
 	</span>
 </form>
-<div class="col-xs-12 alert" id="party-form-response"></div>
+<div class="col-xs-12 alert" id="party-form-response" class="message"></div>
 
 <script>
 //Process form submission
@@ -104,7 +104,7 @@ function submitPartyReservationForm()
 			url: "/mailers/partyReservation.php",
 			data: values,
 		}).done(function(data){
-			$("#response").html(data);
+			//$("#response").html(data);
 		});
 	}
 	else
