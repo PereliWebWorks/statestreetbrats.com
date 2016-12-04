@@ -1,4 +1,5 @@
 <?php
+
 	$db;
 	$message = "";
 	//If the user is logging in
