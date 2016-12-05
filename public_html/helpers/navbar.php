@@ -42,6 +42,34 @@
         <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
         <li><a href="#">Link</a></li>-->
       </ul>
+      <?php if(isset($_SESSION["logged_in"])) : ?>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Admin
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="specials.php">Specials</a></li>
+              <li><a href="#" id="log-out-btn">Log Out</a></li>
+              <script>
+                $("#log-out-btn").click(function(){logOut();});
+
+                function logOut()
+                {
+                  $.ajax({
+                    url: "<?=HOST_URL?>helpers/logOut.php",
+                  }).done(function(){
+                    console.log("worked");
+                    window.location.replace("<?=HOST_URL?>");
+                  });
+                }
+              </script>
+            </ul>
+          </li>
+        </ul>
+      <?php endif ?>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+
+

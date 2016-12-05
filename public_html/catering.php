@@ -1,4 +1,5 @@
-<?php require_once("helpers/globalHead.php"); ?>
+<?php 
+	require_once("helpers/globalHead.php"); ?>
 
 	<div class="row">
 		<span class="col-xs-3"></span>

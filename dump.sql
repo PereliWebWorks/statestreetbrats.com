@@ -16,6 +16,30 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `specials`
+--
+
+DROP TABLE IF EXISTS `specials`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `specials` (
+  `text` varchar(1000) NOT NULL,
+  `day` varchar(9) NOT NULL,
+  `id` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `specials`
+--
+
+LOCK TABLES `specials` WRITE;
+/*!40000 ALTER TABLE `specials` DISABLE KEYS */;
+/*!40000 ALTER TABLE `specials` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `users`
 --
 
@@ -24,8 +48,8 @@ DROP TABLE IF EXISTS `users`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `users` (
   `username` varchar(100) NOT NULL,
-  `password` varchar(255) DEFAULT NULL,
-  `role` tinyint(4) DEFAULT NULL,
+  `password_digest` varchar(255) NOT NULL,
+  `role` tinyint(4) NOT NULL,
   PRIMARY KEY (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -48,4 +72,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-12-04 23:01:18
+-- Dump completed on 2016-12-05  3:23:35
