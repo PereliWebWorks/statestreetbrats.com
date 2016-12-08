@@ -1,4 +1,5 @@
 <?php require_once("helpers/globalHead.php"); ?>
+<?php require_once("helpers/connectToDB.php"); ?>
 
 <?php require_once("helpers/socialMediaIcons.php"); ?>
 <?php require_once("helpers/headerSlider.php"); ?>
@@ -31,16 +32,70 @@
 		</div>
 
 		<div class="row bubble slide-module-bottom">
-			<h1 class="col-xs-12 text-center">Today's Specials</h1>
-			<span class="col-md-9 col-xs-12">
+			<?php $day = "thursday"; ?>
+			<h1 class="col-xs-12 text-center"><?= ucfirst($day) ?>'s Specials</h1>
+			<img src="images/bratman.png" class="col-md-2 hidden-xs hidden-sm img-responsive" />
+			<span class="col-md-8 col-xs-12">
 				<span class="col-md-3 hidden-xs hidden-sm"></span>
-				<ul class="col-md-9 col-xs-12">
-					<li><h3 class="">Special 1</h3></li>
-					<li><h3 class="">Special 2</h3></li>
-					<li><h3 class="">Special 3</h3></li>
-				</ul>
+				<span class="col-md-9 col-xs-12">
+					<ul class="col-xs-12">
+					<?php
+						$query = "SELECT text FROM specials WHERE day=:day";
+						$stmt = $db->prepare($query);
+						$stmt->bindParam(":day", $day);
+						$stmt->execute();
+					?>
+					<?php if ($stmt->rowCount() !== 0) : //if there are speiclas today ?>
+						<?php while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) : ?>
+							<li><h3><?= $row["text"] ?></h3></li>
+						<?php endwhile ?>
+					<?php else : ?>
+						<h4>There are no specials today.</h4>
+					<?php endif ?>
+					</ul>
+					<span class="col-xs-12" id="all-specials-container">
+						<span id="all-specials">
+							<h3 class="col-xs-12 text-center">All Specials</h3>
+							<?php
+								$days = array("monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday");
+								for ($i = 0 ; $i < sizeof($days) ; $i++) :
+									$day = $days[$i];
+									$query = "SELECT * FROM specials WHERE day=\"$day\"";
+									$stmt = $db->prepare($query);
+									$stmt->execute();
+									if ($stmt->rowCount() > 0) : ?>	
+										<h4><?= ucfirst($day); ?></h4>
+										<?php while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) : ?>
+											<ul>
+												<li><?= $row["text"]; ?></li>
+											</ul>
+										<?php endwhile ?>
+									<?php endif ?>
+								<?php endfor ?>
+						</span>
+						<span class="col-xs-12">
+							<input type="button" class="btn btn-default" value="Show All Specials" id="show-specials-btn"/>
+							<input type="button" class="btn btn-default" value="Hide Specials" id="hide-specials-btn" />
+						</span>
+						<style>
+							#all-specials, #hide-specials-btn{display:none;}
+						</style>
+						<script>
+							$("#show-specials-btn").click(function(){
+								$("#all-specials").slideDown();
+								$("#show-specials-btn").fadeToggle(500, function(){
+									$("#hide-specials-btn").fadeToggle()});
+							});
+							$("#hide-specials-btn").click(function(){
+								$("#all-specials").slideUp();
+								$("#hide-specials-btn").fadeToggle(500, function(){
+									$("#show-specials-btn").fadeToggle()});
+							});
+						</script>
+					</span>
+				</span>
 			</span>
-			<img src="images/bratman_reversed.png" class="col-md-3 hidden-xs hidden-sm img-responsive" />
+			<img src="images/bratman_reversed.png" class="col-md-2 hidden-xs hidden-sm img-responsive" />
 		</div>
 
 
