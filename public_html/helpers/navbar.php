@@ -48,7 +48,7 @@
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Admin
             <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="specials.php">Specials</a></li>
+              <li><a href="specialsIndex.php">Specials</a></li>
               <li><a href="#" id="log-out-btn">Log Out</a></li>
               <script>
                 $("#log-out-btn").click(function(){logOut();});
@@ -58,7 +58,6 @@
                   $.ajax({
                     url: "<?=HOST_URL?>helpers/logOut.php",
                   }).done(function(){
-                    console.log("worked");
                     window.location.replace("<?=HOST_URL?>");
                   });
                 }
