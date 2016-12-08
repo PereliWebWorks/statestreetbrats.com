@@ -77,8 +77,17 @@
 
 			<div id="catering-food-info">
 				<table id="catering-menu-sandwiches" class="table table-responsive">
-					<tbody><tr>
+					<tbody>
+					<tr class="hidden-xs">
 						<th colspan="3">
+							<h4>Tavern Sandwiches</h4>
+						</th>
+						<th>
+							<h4>Quantity</h4>
+						</th>
+					</tr>
+					<tr class="hidden-sm hidden-lg hidden-lg">
+						<th colspan="2">
 							<h4>Tavern Sandwiches</h4>
 						</th>
 						<th>
@@ -88,17 +97,17 @@
 					<tr>
 						<td>
 							Red Brat</td>
-						<td>
+						<td class="catering-description">
 							Classic smoked beef brat. Sliced butterfly style and grilled perfection.</td>
 						<td>
 							$5.25</td>
 						<td>
-							<input id="red-brat" name="catering[red-brat]" data-price="5.25" size="4" value="0" type="number"></td>
+							<input id="red-brat" name="catering[red-brat]" data-price="5.25" size="1" value="0" type="number"></td>
 					</tr>
 					<tr>
 						<td>
 							Trig's World's Best Brat</td>
-						<td>
+						<td class="catering-description">
 							</td>
 						<td>
 							$5.25</td>
@@ -108,7 +117,7 @@
 					<tr>
 						<td>
 							Cheese Burger</td>
-						<td>
+						<td class="catering-description">
 							Same great tasting burger that's served on State Street...served on your street.</td>
 						<td>
 							$6.25</td>
@@ -118,7 +127,7 @@
 					<tr>
 						<td>
 							Teriyaki Chicken Breast</td>
-						<td>
+						<td class="catering-description">
 							</td>
 						<td>
 							$6.75</td>
@@ -129,7 +138,7 @@
 					<tr>
 						<td>
 							Chicken Cheddar Brat</td>
-						<td>
+						<td class="catering-description">
 							</td>
 						<td>
 							$5.25</td>
@@ -139,7 +148,7 @@
 					<tr>
 						<td>
 							Garden Burger</td>
-						<td>
+						<td class="catering-description">
 							For the vegetarians out there!</td>
 						<td>
 							$5.00</td>
@@ -149,7 +158,7 @@
 					<tr>
 						<td>
 							1/4# Foot Long Dog</td>
-						<td>
+						<td class="catering-description">
 							Kids Love em!</td>
 						<td>
 							$4.50</td>
@@ -159,7 +168,7 @@
 					<tr>
 						<td>
 							Hamburger</td>
-						<td>
+						<td class="catering-description">
 							</td>
 						<td>
 							$5.75</td>
@@ -167,8 +176,17 @@
 							<input id="hamburger" name="catering[hamburger]" data-price="5.75" size="4" value="0" type="number"></td>
 					</tr>
 
-					<tr>
+					<tr class="hidden-xs">
 						<th colspan="3" valign="top">
+							<h4>Signature Sandwiches</h4>
+							<p>(Always available for 50 or less people â€“ please limit to 1 selection on groups over 50)</p>
+						</th>
+						<th valign="top">
+							<h4>Quantity</h4>
+						</th>
+					</tr>
+					<tr class="hidden-sm hidden-lg hidden-md">
+						<th colspan="2" valign="top">
 							<h4>Signature Sandwiches</h4>
 							<p>(Always available for 50 or less people â€“ please limit to 1 selection on groups over 50)</p>
 						</th>
@@ -179,7 +197,7 @@
 					<tr>
 						<td>
 							Pretzel Burger</td>
-						<td>
+						<td class="catering-description">
 							A pretzel-infused patty with cheese on a tasty pretzel roll</td>
 						<td>
 							$7.00</td>
@@ -189,7 +207,7 @@
 					<tr>
 						<td>
 							Curd Burger</td>
-						<td>
+						<td class="catering-description">
 							</td>
 						<td>
 							$8.25</td>
@@ -199,7 +217,7 @@
 					<tr>
 						<td>
 							Mushroom &amp; Swiss Chicken</td>
-						<td>
+						<td class="catering-description">
 							</td>
 						<td>
 							$8.00</td>
@@ -209,7 +227,7 @@
 					<tr>
 						<td>
 							Ribeye Steak Sandwich</td>
-						<td>
+						<td class="catering-description">
 							Alumni favorite since 1936. Same great steak, different cow.</td>
 						<td>
 							$7.00</td>
@@ -219,7 +237,7 @@
 					<tr>
 						<td>
 							Bacon Cheese Burger</td>
-						<td>
+						<td class="catering-description">
 							</td>
 						<td>
 							$7.25</td>
@@ -229,7 +247,7 @@
 					<tr>
 						<td>
 							Bacon Swiss Chicken</td>
-						<td>
+						<td class="catering-description">
 							A tasty topping of bacon and swiss are sure to please your palate.</td>
 						<td>
 							$7.25</td>
@@ -239,7 +257,7 @@
 					<tr>
 						<td>
 							Mushroom &amp; Swiss Burger</td>
-						<td>
+						<td class="catering-description">
 							A tasty topping of mushroom and swiss are sure to please your palate.</td>
 						<td>
 							$7.50</td>
