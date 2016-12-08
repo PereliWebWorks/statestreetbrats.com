@@ -2,10 +2,11 @@
 <?php require_once("helpers/contentStart.php"); ?>
 
 
-<span class="row bubble">
-	<h1 class="col-xs-12">Party Reservations</h1>
-	<h2 class="col-xs-12">Let Us Take Care of You</h2>
-	<div class="col-xs-12">
+<span class="row">
+	<div class="col-md-2 hidden-xs hidden-sm"></div>
+	<div class="col-md-8 col-xs-12 bubble">
+		<h1 class="col-xs-12">Party Reservations</h1>
+		<h2 class="col-xs-12">Let Us Take Care of You</h2>
 	 	Whether you're celebrating a special occasion or just going out for the night, we want to host your group! Submit this form with your group's information and we will get back to you with personalized specials just for your group. All party sizes welcome (The larger the group, the better the discount).
 	 	<br/><br/>
 		We love themed events and may offer special deals to such a group. Come in with your sports jerseys, ugly sweaters, etc... Include your theme in the box provided for your custom tailored deal!
@@ -19,13 +20,7 @@
 		If your group is larger, you can book the entire second floor exlusively for a room reservation fee.  Contact us to hear about special rebates we offer for arriving with your entire crew!  As of February 2013, we are unable to host private late night (after 9pm) events on our second floor on Tuesday, Friday, or Saturday nights, but we would love to have your group on any other night of the week!
 		<br/><br/>
 		We offer a variety of options for both food and beverage.  Whether you're interested in light appetizers, brats and burgers galore, or anything in between, we aim to please!
-	</div>
-</span>
-
-<!-- Tabs -->
-<span class="row"> 
-	<span class="col-xs-1"></span>
-	<span class="col-xs-10">
+		<br/><br/>
 		<div id="tabs">
 		  <ul>
 		    <li><a href="#fragment-1">Bachelor</a></li>
@@ -42,24 +37,27 @@
 		    We can do wristbanded parties for 18+ groups of up to 200 party people on our second floor! This includes bouncer services. We do dinner parties offering food options including simple snacks from $3 person up to full meal service at $5.50 per plate. Smaller party room rental rates for the 40 person room begin at 200 dollars. Rates to book the entire upstairs begin at 400 dollars. Please submit the form for a speedy reply. We can do keg sales! Please submit the message for form current rates.
 		  </div>
 		</div>
-		<!-- tabulate the tabs -->
-		<script>
-		$( function() {
-		$( "#tabs" ).tabs();
-		} );
-		</script>
-	</span>
-	<span class="col-xs-1"></span>
+			<!-- tabulate the tabs -->
+			<script>
+			$( function() {
+			$( "#tabs" ).tabs();
+			} );
+			</script>
+	</div>
+	<div class="col-md-2 hidden-xs hidden-sm"></div>
 </span>
 
 
+
+
 <!-- Catering form -->
-<span class="row bubble">
-	<span class="col-md-6 col-xs-12">
+<span class="row">
+	<span class="col-md-2 hidden-xs hidden-sm"></span>
+	<span class="col-md-8 col-xs-12 bubble">
 		<h1 class="col-xs-12">Reserve State Street Brats for Your Party</h1>
 		<?php require_once("helpers/partyReservationForm.php"); ?>
 	</span>
-	<span class="col-md-6 hidden-xs"></span>
+	<span class="col-md-2 hidden-xs hidden-sm"></span>
 </span>
 
 

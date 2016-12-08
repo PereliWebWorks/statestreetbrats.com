@@ -3,7 +3,7 @@
 <?php require_once("helpers/connectToDB.php"); ?>
 
 <?php
-
+	$selectedDay = "monday";
 	if (isset($_POST["add"])) //If adding a special
 	{
 		$special = $_POST["text"];
@@ -15,6 +15,7 @@
 			$stmt->bindParam(":special", $special);
 			$stmt->bindParam(":day", $day);
 			$stmt->execute();
+			$selectedDay = $day;
 		}
 	}
 	elseif (isset($_POST["remove"]))
@@ -45,13 +46,15 @@
 					<div class="form-group">
 						<label for="special-day">Day</label>
 						<select id="special-day" name="day" class="form-control">
-							<option value="monday">Monday</option>
-							<option value="tuesday">Tuesday</option>
-							<option value="wednesday">Wednesday</option>
-							<option value="thursday">Thursday</option>
-							<option value="friday">Friday</option>
-							<option value="saturday">Saturday</option>
-							<option value="sunday">Sunday</option>
+						<?php $days = array("monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"); ?>
+						<?php for ($i = 0 ; $i < sizeof($days) ; $i++) : ?>
+							<option 
+								value="<?= $days[$i] ?>" 
+								<?= $selectedDay === $days[$i] ? 'selected="true"' : ""; ?>
+							>
+								<?= ucfirst($days[$i]) ?>
+							</option>
+						<?php endfor ?>
 						</select>
 					</div>
 					<input type="submit" value="Add Special" name="add" class="btn btn-success"/>

@@ -1,5 +1,5 @@
 
-<div id="social-media-icons-container">
+<div id="social-media-icons-container" class="hidden-xs hidden-sm">
 	<div id="social-media-icons">
 		<a href="https://www.facebook.com/statestreetbratswisco">
 			<img src="images/social_media_logos/facebook.png" />

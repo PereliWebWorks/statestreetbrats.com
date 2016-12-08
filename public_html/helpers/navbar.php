@@ -5,7 +5,7 @@
       "Catering" => "/catering.php",
       "Party Reservations" => "/party-reservations.php",
       "FAQ" => "/faq.php",
-      "Employment" => "/employment.php",
+      "Employment" => "/index.php#apply",
       "Contact" => "/contact.php"
   );
 

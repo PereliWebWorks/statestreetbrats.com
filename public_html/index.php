@@ -21,10 +21,32 @@
 					<h2 class="col-xs-12 text-center">Open 11am to 2am</h2>
 					<span class="col-xs-12">
 						<a href="#" class="col-xs-6 text-center">
-							<h3 class="text-center">Menu</h3>
+							<h3 class="btn btn-success btn-lg text-center">Menu</h3>
 						</a>
 						<a href="#" class="col-xs-6 text-center">
-							<h3 class="text-center">Contact</h3>
+							<h3 class="btn btn-success btn-lg text-center">Contact</h3>
+						</a>
+					</span>
+				</div>
+				<div class="col-xs-12 hidden-md hidden-lg">
+					<span class="col-xs-3 text-center">
+						<a href="https://www.facebook.com/statestreetbratswisco">
+							<img src="images/social_media_logos/facebook.png" class="img-responsive" />
+						</a>
+					</span>
+					<span class="col-xs-3 text-center">
+						<a href="https://twitter.com/StateStBrats">
+							<img src="images/social_media_logos/twitter.png" class="img-responsive" />
+						</a>
+					</span>
+					<span class="col-xs-3 text-center">
+						<a href="https://instagram.com/brat_man/">
+							<img src="images/social_media_logos/instagram.png" class="img-responsive" />
+						</a>
+					</span>
+					<span class="col-xs-3 text-center">
+						<a href="https://www.pinterest.com/statestreetbrat/">
+							<img src="images/social_media_logos/pinterest.png" class="img-responsive" />
 						</a>
 					</span>
 				</div>
@@ -36,8 +58,7 @@
 			<h1 class="col-xs-12 text-center"><?= ucfirst($day) ?>'s Specials</h1>
 			<img src="images/bratman.png" class="col-md-2 hidden-xs hidden-sm img-responsive" />
 			<span class="col-md-8 col-xs-12">
-				<span class="col-md-3 hidden-xs hidden-sm"></span>
-				<span class="col-md-9 col-xs-12">
+				<span class="col-xs-12">
 					<ul class="col-xs-12">
 					<?php
 						$query = "SELECT text FROM specials WHERE day=:day";
@@ -54,7 +75,7 @@
 					<?php endif ?>
 					</ul>
 					<span class="col-xs-12" id="all-specials-container">
-						<span id="all-specials">
+						<span id="all-specials" class="col-xs-12">
 							<h3 class="col-xs-12 text-center">All Specials</h3>
 							<?php
 								$days = array("monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday");
@@ -73,7 +94,7 @@
 									<?php endif ?>
 								<?php endfor ?>
 						</span>
-						<span class="col-xs-12">
+						<span class="col-xs-12 text-center">
 							<input type="button" class="btn btn-default" value="Show All Specials" id="show-specials-btn"/>
 							<input type="button" class="btn btn-default" value="Hide Specials" id="hide-specials-btn" />
 						</span>
@@ -147,35 +168,26 @@
 			</span>
 		</div>
 
-		<div class="row bubble slide-module-bottom">
-			<span class="col-md-6 col-xs-12">
-				<h2>603 State St</h2>
-				<h2>Madison, WI</h2>
-				<h2>608-255-5544</h2>
-			</span>
-			<span class="col-md-6 col-xs-12">
-				<div id="map" class="col-xs-12">
-				</div>
-				<script>
-			      var map;
-			       
-			      var myLatLong = {lat: 43.074943, lng: -89.395988};
-			      function initMap() {
-			        map = new google.maps.Map(document.getElementById('map'), {
-			          center: myLatLong,
-			          zoom: 15
-			        });
 
-			        var marker = new google.maps.Marker({
-			          position: myLatLong,
-			          map: map,
-			          title: 'State Street Brats'
-			        });
-			      }
-			    </script>
-			    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv7rEmfbNnGIymEysxReJXhoUS0jG-0r0&callback=initMap"
-			    async defer></script>
-			</span>
+		<div class="row bubble slide-module-bottom" id="apply">
+			<div class="col-xs-12 col-md-9">
+				<h1 class="text-center col-xs-12">Want to work for State Street Brats?</h1>
+				<div class="col-xs-12" id="call-for-employees">
+				If you're interested in working for State Street Brats, you can apply online. Don't worry about calling or emailing us. Our hiring process is 100% third party and online! 
+				</div>
+
+				<div class="col-xs-12 text-center">
+					<br/>
+					<a href="http://statestreetbrats.companycareersite.com/">
+						<input type="button" class="btn btn-success btn-lg" value="Apply Today!" />
+					</a>
+				</div>
+			</div>
+			<img src="images/employees.jpeg" class="img-responsive col-md-3 hidden-xs hidden-sm" />
+		</div>
+
+		<div class="row bubble slide-module-bottom">
+			<?php require_once("helpers/contactInfo.php"); ?>
 		</div>
 
 	</span>

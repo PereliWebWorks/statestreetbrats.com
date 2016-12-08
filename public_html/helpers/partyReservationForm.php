@@ -34,8 +34,8 @@
 	</div>
 	<div class="form-group">
 		<label class="form-control-label" for="party-privacy">This party is</label><br/>
-		<input type="radio" class="party-field" name="party-privacy" value="private"> Private
-		<input type="radio" class="party-field" name="party-privacy" value="semi-private"> Semi-private
+		<input type="radio" class="party-field" name="party-privacy" value="private"> Private<br/>
+		<input type="radio" class="party-field" name="party-privacy" value="semi-private"> Semi-private<br/>
 		<input type="radio" class="party-field" name="party-privacy" value="public"> Public
 	</div>
 	<div class="form-group">
@@ -49,7 +49,8 @@
 		<button type="reset" class="btn btn-warning">Reset</button>
 	</span>
 </form>
-<div class="col-xs-12 alert" id="party-form-response" class="message"></div>
+<div class="col-xs-12 message hidden" id="party-form-response"></div>
+
 
 <script>
 //Process form submission
@@ -69,13 +70,13 @@ function submitPartyReservationForm()
 		if ($(element).hasClass("required") && element.value === "")
 		{
 			//Add the "danger" class/look to the parent element (form-group)
-			$(element).parent().find("label").addClass("text-danger");
+			$(element).parent().addClass("text-danger").addClass("bg-danger");
 			$(element).parent().addClass("has-error");
 			validInput = false;
 		}
 		else //If not, remove the danger class if it had it before (i.e. if the previous submission was invalid)
 		{
-			$(element).parent().find("label").removeClass("text-danger");
+			$(element).parent().removeClass("text-danger").removeClass("bg-danger");
 			$(element).parent().removeClass("has-error");
 		}
 
@@ -111,7 +112,7 @@ function submitPartyReservationForm()
 	{
 		//Set the "response" message to "invalid input" or whatever
 		$("#party-form-response").html("You must fill in all required fields.")
-			.removeClass("alert-success").addClass("alert-danger");
+			.removeClass("hidden").removeClass("alert-success").addClass("alert-danger");
 	}
 }
 

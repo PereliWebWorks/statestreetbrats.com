@@ -31,6 +31,21 @@ body
   border-radius: 5px;
 }
 
+#x-backdrop-img{
+  width: 100%;
+}
+
+
+.form-group{
+  border-radius: 3px;
+}
+
+label{
+  margin-left: .4em;
+  margin-top: .4em;
+}
+
+
 .message, #message
 {
   margin-top: 1em;
@@ -163,6 +178,11 @@ body
   height: 20em;
 }
 
+#call-for-employees
+{
+  font-size: 1.4em;
+}
+
 
 /*Tabs*/
 #tabs li
@@ -226,6 +246,19 @@ body
 #menu-image
 {
   margin-top: 20px;
+}
+
+
+
+
+/*FAQ*/
+.question {
+  font-weight: bold;
+}
+
+.answer{
+  margin-bottom: 2em;
+  margin-left: 2em;
 }
 
 

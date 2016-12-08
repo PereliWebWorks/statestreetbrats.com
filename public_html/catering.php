@@ -1,12 +1,37 @@
-<?php 
-	require_once("helpers/globalHead.php"); ?>
+<?php require_once("helpers/globalHead.php"); ?>
+<?php require_once("helpers/contentStart.php"); ?>
 
 	<div class="row">
-		<span class="col-xs-3"></span>
-		<form id="catering-form" class="col-xs-6 bubble">
-			
+		<span class="col-xs-2"></span>
+		<span class="col-xs-8 bubble">
+			<h1>Catering</h1>
+			<p>All of our delicious selections brought to YOUR HOME!</p>
+			<p>
+				State Street Brats can handle events from 20 to 2,000 (yes 2,000) people. We provide quality food at affordable prices. You get the same great service that you would receive in our restaurant, at the site of your choosing. We are ready to serve your group, large or small, be it a family reunion, company picnic or social club. Our catering crew is ready to go to your home, office, or one of Madison's beautiful parks. We also offer "in house" catering. If you can't find a suitable location, you can bring your group to State Street Brats.  Generally, we can arrange pick ups of large orders (over 20 people) with 2 hours notice. Large orders for delivery require 48 hours notice so we can schedule workers.  Large orders for onsite catering must be placed at least ten days before the event, as we schedule ten days in advance and cannot guarantee we will have workers available to staff such large events once the schedule is posted for a given period.  Small groups (under 20 people) can generally be delivered by staff on the shift with 2 hours notice.
+			</p>
+			<p>
+				State Street Brats offers traditional Wisconsin tailgate at competitive prices. State Street Brats does not have any set-up fees, delivery charges, or cleanup costs. The only thing you pay for is the food you and your guests eat. All utensils, plates and condiments are included in the sandwiches prices. You will never find hidden costs when your party is catered by State Street Brats.
+			</p>
+			<p>
+				Your event can be tailored to your budget! You can pre-order a set amount of sandwiches and sides and know in advance what the event will cost! 
+			</p>
+			<p>Or . . . </p>
+			<p>You can set the menu as you like and you will only be charged for what you actually go through at the event (i.e. not 12.00 per person regardless of age). This works great when you are not sure of the side item people might eat. </p>
+			<p>Or . . . </p>
+			<p>
+				You can ask for tickets and hand them out to guests as YOU see fit. Each ticket will get them a certain sandwich and side for one helping only. If they want more, they have to get a ticket from YOU! 
+			</p>
+			<h3>Curious about catering costs?</h3>
+			<p>
+				Fill in item quantities in the form bellow to see an instant price estimate. Like what you see? Enter your details at the bottom and we'll contact you about catering your event!
+			</p>
+		</span>
+		<span class="col-xs-2"></span>
+	</div>
 
-
+	<div class="row">
+		<span class="col-xs-2"></span>
+		<form id="catering-form" class="col-xs-8 bubble">
 			<!-- Contact section -->
 			<div id="catering-contact-info">
 				<div class="form-group">
@@ -266,17 +291,17 @@
 				</table>
 			</div>
 		</form>
-		<span class="col-xs-3"></span>
+		<span class="col-xs-2"></span>
 	</div>
 
 	<div class="row">
-		<div class="col-xs-3"></div>
-		<div class="col-xs-6 text-center bubble">
+		<div class="col-xs-2"></div>
+		<div class="col-xs-8 text-center bubble">
 			<span id="total-container">
 				<span class="col-xs-12">
 					<button type="button" id="calculate-total" class="btn btn-primary">Calculate Total</button> | $<span id="total">0.00</span>
 				</span>
-				<span class="col-xs-6">
+				<span class="col-xs-6 text-left">
 					<input type="button" id="submit-button" class="btn btn-success" value="Submit" />
 				</span>
 				<span class="col-xs-6 text-right">
@@ -285,7 +310,24 @@
 			</span>
 			<span class="col-xs-12" id="message" class="message"></span>
 		</div>
-		<div class="col-xs-3"></div>
+		<div class="col-xs-2"></div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-2"></div>
+		<div class="col-xs-8 bubble">
+			<h3 class="text-danger">Please Note</h3>
+			<p>
+				This is only a portion of what we are capable of catering. Special requests are no problem at State Street Brats. We will work to ensure that you and your guests will eat exactly the right food for the occasion. From vegetarian options to Cajun seasoned chicken to hot dogs for the kids, State Street Brats can take care of your catering needs, just ask!
+			</p>
+			<p>
+				To book a catering event at SSB or your place of interest, fill out the form above or call 255-5544. Need more info before you book? Just call us, or see our <a href="FAQ#catering">Catering FAQ</a>.
+			</p>
+			<p><i>
+				All on site catering events have a $500.00 minimum charge as a deposit which will be deducted from the final invoice.
+			</i></p>
+		</div>
+		<div class="col-xs-2"></div>
 	</div>
 
 	<script>
@@ -434,7 +476,7 @@
 	</script>
 
 
-
+<?php require_once("helpers/contentEnd.php"); ?>
 <?php require_once("helpers/globalFoot.php"); ?>
 
 
