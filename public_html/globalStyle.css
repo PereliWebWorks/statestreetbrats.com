@@ -7,6 +7,7 @@ body
   background-color: transparent;
   background-image: url("images/bricks.jpg");
   background-attachment: fixed;
+
 }
 
 .main-content
@@ -83,6 +84,16 @@ label{
 #social-media-icons img:hover
 {
   opacity: 1;
+}
+
+#social-media-btns-mobile
+{
+  margin-top: 1em;
+}
+
+#social-media-btns-mobile a img
+{
+  width: 100%;
 }
 
 #globalFooter{

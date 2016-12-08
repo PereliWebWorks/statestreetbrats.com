@@ -19,7 +19,7 @@
 				<img src="images/vectors/ribbons_badges/banner1.png" class="col-xs-12 img-responsive banner-image" />
 				<div class="sub-bubble">
 					<h2 class="col-xs-12 text-center">Open 11am to 2am</h2>
-					<span class="col-xs-12">
+					<span class="col-xs-12 text-center">
 						<a href="#" class="col-xs-6 text-center">
 							<h3 class="btn btn-success btn-lg text-center">Menu</h3>
 						</a>
@@ -28,26 +28,30 @@
 						</a>
 					</span>
 				</div>
-				<div class="col-xs-12 hidden-md hidden-lg">
-					<span class="col-xs-3 text-center">
-						<a href="https://www.facebook.com/statestreetbratswisco">
-							<img src="images/social_media_logos/facebook.png" class="img-responsive" />
-						</a>
+				<div class="col-xs-12 hidden-sm hidden-md hidden-lg" id="social-media-btns-mobile">
+					<span class="row">
+						<span class="col-xs-6 text-center">
+							<a href="https://www.facebook.com/statestreetbratswisco">
+								<img src="images/social_media_logos/facebook.png" class="img-responsive" />
+							</a>
+						</span>
+						<span class="col-xs-6 text-center">
+							<a href="https://twitter.com/StateStBrats">
+								<img src="images/social_media_logos/twitter.png" class="img-responsive" />
+							</a>
+						</span>
 					</span>
-					<span class="col-xs-3 text-center">
-						<a href="https://twitter.com/StateStBrats">
-							<img src="images/social_media_logos/twitter.png" class="img-responsive" />
-						</a>
-					</span>
-					<span class="col-xs-3 text-center">
-						<a href="https://instagram.com/brat_man/">
-							<img src="images/social_media_logos/instagram.png" class="img-responsive" />
-						</a>
-					</span>
-					<span class="col-xs-3 text-center">
-						<a href="https://www.pinterest.com/statestreetbrat/">
-							<img src="images/social_media_logos/pinterest.png" class="img-responsive" />
-						</a>
+					<span class="row">
+						<span class="col-xs-6 text-center">
+							<a href="https://instagram.com/brat_man/">
+								<img src="images/social_media_logos/instagram.png" class="img-responsive" />
+							</a>
+						</span>
+						<span class="col-xs-6 text-center">
+							<a href="https://www.pinterest.com/statestreetbrat/">
+								<img src="images/social_media_logos/pinterest.png" class="img-responsive" />
+							</a>
+						</span>
 					</span>
 				</div>
 			</span>
@@ -170,8 +174,9 @@
 
 
 		<div class="row bubble slide-module-bottom" id="apply">
-			<div class="col-xs-12 col-md-9">
-				<h1 class="text-center col-xs-12">Want to work for State Street Brats?</h1>
+			<h1 class="text-center col-xs-12">Want to work for State Street Brats?</h1>
+			<div class="col-xs-12 col-md-7">
+				
 				<div class="col-xs-12" id="call-for-employees">
 				If you're interested in working for State Street Brats, you can apply online. Don't worry about calling or emailing us. Our hiring process is 100% third party and online! 
 				</div>
@@ -183,7 +188,9 @@
 					</a>
 				</div>
 			</div>
-			<img src="images/employees.jpeg" class="img-responsive col-md-3 hidden-xs hidden-sm" />
+			<div class="col-md-5 hidden-xs hidden-sm">
+				<img src="images/employees.jpeg" class="img-responsive body-image"/>
+			</div>
 		</div>
 
 		<div class="row bubble slide-module-bottom">

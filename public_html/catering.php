@@ -2,8 +2,8 @@
 <?php require_once("helpers/contentStart.php"); ?>
 
 	<div class="row">
-		<span class="col-xs-2"></span>
-		<span class="col-xs-8 bubble">
+		<span class="col-sm-2 hidden-xs"></span>
+		<span class="col-sm-8 col-xs-12 bubble">
 			<h1>Catering</h1>
 			<p>All of our delicious selections brought to YOUR HOME!</p>
 			<p>
@@ -26,12 +26,12 @@
 				Fill in item quantities in the form bellow to see an instant price estimate. Like what you see? Enter your details at the bottom and we'll contact you about catering your event!
 			</p>
 		</span>
-		<span class="col-xs-2"></span>
+		<span class="col-sm-2 hidden-xs"></span>
 	</div>
 
 	<div class="row">
-		<span class="col-xs-2"></span>
-		<form id="catering-form" class="col-xs-8 bubble">
+		<span class="col-sm-2 hidden-xs"></span>
+		<form id="catering-form" class="col-sm-8 col-xs-12 bubble">
 			<!-- Contact section -->
 			<div id="catering-contact-info">
 				<div class="form-group">
@@ -76,7 +76,7 @@
 
 
 			<div id="catering-food-info">
-				<table id="catering-menu-sandwiches">
+				<table id="catering-menu-sandwiches" class="table table-responsive">
 					<tbody><tr>
 						<th colspan="3">
 							<h4>Tavern Sandwiches</h4>
@@ -291,12 +291,12 @@
 				</table>
 			</div>
 		</form>
-		<span class="col-xs-2"></span>
+		<span class="col-sm-2 hidden-xs"></span>
 	</div>
 
 	<div class="row">
-		<div class="col-xs-2"></div>
-		<div class="col-xs-8 text-center bubble">
+		<div class="col-sm-2 hidden-xs"></div>
+		<div class="col-sm-8 col-xs-12 text-center bubble">
 			<span id="total-container">
 				<span class="col-xs-12">
 					<button type="button" id="calculate-total" class="btn btn-primary">Calculate Total</button> | $<span id="total">0.00</span>
@@ -310,12 +310,12 @@
 			</span>
 			<span class="col-xs-12" id="message" class="message"></span>
 		</div>
-		<div class="col-xs-2"></div>
+		<div class="col-sm-2 hidden-xs"></div>
 	</div>
 
 	<div class="row">
-		<div class="col-xs-2"></div>
-		<div class="col-xs-8 bubble">
+		<div class="col-sm-2 hidden-xs"></div>
+		<div class="col-sm-8 col-xs-12 bubble">
 			<h3 class="text-danger">Please Note</h3>
 			<p>
 				This is only a portion of what we are capable of catering. Special requests are no problem at State Street Brats. We will work to ensure that you and your guests will eat exactly the right food for the occasion. From vegetarian options to Cajun seasoned chicken to hot dogs for the kids, State Street Brats can take care of your catering needs, just ask!
@@ -327,7 +327,7 @@
 				All on site catering events have a $500.00 minimum charge as a deposit which will be deducted from the final invoice.
 			</i></p>
 		</div>
-		<div class="col-xs-2"></div>
+		<div class="col-sm-2 hidden-xs"></div>
 	</div>
 
 	<script>
