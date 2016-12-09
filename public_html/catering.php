@@ -188,7 +188,7 @@
 					<tr class="hidden-sm hidden-lg hidden-md">
 						<th colspan="2" valign="top">
 							<h4>Signature Sandwiches</h4>
-							<p>(Always available for 50 or less people â€“ please limit to 1 selection on groups over 50)</p>
+							<p>(Always available for 50 or less people. Please limit to 1 selection on groups over 50)</p>
 						</th>
 						<th valign="top">
 							<h4>Quantity</h4>
@@ -268,45 +268,24 @@
 
 				<p>&nbsp;</p>
 
-				<table id="catering-menu-desserts">
-					<tbody>
-						<tr>
-							<th colspan="2"><h4>Desserts</h4></th>
-						</tr>
-						<tr><td colspan="2" style="text-align: center">$1.50 each</td></tr>
-						<tr>
-							<td>
-								Including Cookies and/or Frosted Brownies</td>
-							<td>
-								<input id="cookies" name="catering[cookies]" data-price="1.50" size="4" value="0" type="number"></td>
-						</tr>
-					</tbody>
-				</table>
-						
-				<table id="catering-menu-sides">
-					<tbody>
-						<tr>
-							<th colspan="6">
-								<h4>
-									Available Side Orders</h4>
-							</th>
-						</tr>
-						<tr>
-							<td colspan="6">
-								Choice of:</td>
-						</tr>
-						<tr>
-							<td colspan="2" style="text-align: center;">
-								<input checked="checked" name="catering[number-of-sides]" class="number-of-sides" data-price="2.50" value="2" type="radio"> 2: $2.50</td>
-							<td colspan="2" style="text-align: center;">
-								<input name="catering[number-of-sides]" class="number-of-sides" data-price="2.75" value="3" type="radio"> 3: $2.75</td>
-							<td colspan="2" style="text-align: center;">
-								<input name="catering[number-of-sides]" class="number-of-sides" data-price="3.25" value="4" type="radio"> 4: $3.25</td>
-						</tr>
-						<tr>
-							<td colspan="6">Side items including but not limited to Tavern Chips, Baked Beans, Potato Salad, Pasta Salad, Cut Fruit Trays, Cut Veggie Trays, Pretzels, Corn on the Cob (minimum 24 cobs), and more, please ask.  </td>
-					</tr></tbody>
-				</table>
+				<div class="col-xs-12" id="catering-menu-desserts">
+					<h3>Desserts</h3>
+					<h4>$1.50 each</h4>
+					<div>Including Cookies and/or Frosted Brownies</div><br/>
+					<input id="cookies" name="catering[cookies]" data-price="1.50" size="4" value="0" type="number">
+				</div>
+				<br/><br/>
+				<div class="col-xs-12" id="catering-menu-sides">
+					<h3>Available Side Orders</h3>
+					<div>Choice of:</div>
+					<input checked="checked" name="catering[number-of-sides]" class="number-of-sides" data-price="2.50" value="2" type="radio"> 2: $2.50<br/>
+					<input name="catering[number-of-sides]" class="number-of-sides" data-price="2.75" value="3" type="radio"> 3: $2.75<br/>
+					<input name="catering[number-of-sides]" class="number-of-sides" data-price="3.25" value="4" type="radio"> 4: $3.25<br/>
+					<br/>
+					<div class="col-xs-12">
+					Side items including but not limited to Tavern Chips, Baked Beans, Potato Salad, Pasta Salad, Cut Fruit Trays, Cut Veggie Trays, Pretzels, Corn on the Cob (minimum 24 cobs), and more, please ask.
+					</div>
+				</div>
 			</div>
 		</form>
 		<span class="col-sm-2 hidden-xs"></span>
@@ -316,14 +295,19 @@
 		<div class="col-sm-2 hidden-xs"></div>
 		<div class="col-sm-8 col-xs-12 text-center bubble">
 			<span id="total-container">
-				<span class="col-xs-12">
-					<button type="button" id="calculate-total" class="btn btn-primary">Calculate Total</button> | $<span id="total">0.00</span>
+				<span class="row">
+					<span class="col-xs-12">
+						<button type="button" id="calculate-total" class="btn btn-primary">Calculate Total</button> | $<span id="total">0.00</span>
+					</span>
 				</span>
-				<span class="col-xs-6 text-left">
-					<input type="button" id="submit-button" class="btn btn-success" value="Submit" />
-				</span>
-				<span class="col-xs-6 text-right">
-					<button type="button" id="reset-button" class="btn btn-warning">Reset</button>
+				<span class="row">
+					<span class="col-xs-6 text-left">
+						<input type="button" id="submit-button" class="btn btn-success" value="Submit" />
+					</span>
+					<span class="col-xs-6 text-right">
+						<button type="button" id="reset-button" class="btn btn-warning">Reset</button>
+					</span>
+					<div id="test-message"></div>
 				</span>
 			</span>
 			<span class="col-xs-12" id="message" class="message"></span>
@@ -380,10 +364,10 @@
 						validContactInfo = false;
 					}
 				});
+
 				if(validContactInfo)
 				{
 					//Post the table to the mailer
-
 					$.ajax({
 						type: "POST",
 						url: "/mailers/catering.php",
@@ -420,7 +404,7 @@
 			var totalPrice = 0;
 			var totalSandwiches = 0;
 			//Validate numeric inputs
-			$("#catering-food-info input[type='number'").each(function(index, element){
+			$("#catering-food-info input[type='number']").each(function(index, element){
 				var price = Number(element.dataset.price);
 				var quantity = element.value;
 				if (isEmpty(quantity))//If the user entered a non-number (this is how HTML5 treats number fields, smh)

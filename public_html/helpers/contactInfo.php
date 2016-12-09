@@ -2,7 +2,8 @@
 	<span class="col-md-6 col-xs-12">
 		<h2>603 State St</h2>
 		<h2>Madison, WI</h2>
-		<h2>608-255-5544</h2>
+		<h3>608-255-5544</h3>
+		<h3>statestreetbrats@yahoo.com</h3>
 	</span>
 	<span class="col-md-6 col-xs-12">
 		<div id="map" class="col-xs-12">

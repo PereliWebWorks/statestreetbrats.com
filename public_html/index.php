@@ -58,7 +58,10 @@
 		</div>
 
 		<div class="row bubble slide-module-bottom">
-			<?php $day = "thursday"; ?>
+			<?php 
+				$jd = cal_to_jd(CAL_GREGORIAN,date("m"),date("d"),date("Y"));
+				$day = strtolower(jddayofweek($jd,1));
+			?>
 			<h1 class="col-xs-12 text-center"><?= ucfirst($day) ?>'s Specials</h1>
 			<img src="images/bratman.png" class="col-md-2 hidden-xs hidden-sm img-responsive" />
 			<span class="col-md-8 col-xs-12">
@@ -193,7 +196,7 @@
 			</div>
 		</div>
 
-		<div class="row bubble slide-module-bottom">
+		<div class="row bubble slide-module-bottom" id="contact-info-container">
 			<?php require_once("helpers/contactInfo.php"); ?>
 		</div>
 

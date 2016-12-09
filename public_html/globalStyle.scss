@@ -245,10 +245,14 @@ label{
   font-size: 2em;
 }
 
+#total-container input, #total-container button {
+  margin-top: 1em;
+}
+
 @media only screen and (max-width : 480px) {
   .catering-description{display: none;}
   #catering-form table input{
-    width: 50%;
+    width: 100%;
   }
 }
 

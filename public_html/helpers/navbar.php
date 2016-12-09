@@ -6,7 +6,7 @@
       "Party Reservations" => "/party-reservations.php",
       "FAQ" => "/faq.php",
       "Employment" => "/index.php#apply",
-      "Contact" => "/contact.php"
+      "Contact" => "/index.php#contact-info-container"
   );
 
   $currPage = $_SERVER["PHP_SELF"];
