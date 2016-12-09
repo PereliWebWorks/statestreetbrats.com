@@ -1,4 +1,4 @@
-<span id="contact-information">
+<span id="contact-information" style="min-height: 100%;">
 	<span class="col-md-6 col-xs-12">
 		<h2>603 State St</h2>
 		<h2>Madison, WI</h2>

@@ -179,7 +179,7 @@
 					<tr class="hidden-xs">
 						<th colspan="3" valign="top">
 							<h4>Signature Sandwiches</h4>
-							<p>(Always available for 50 or less people â€“ please limit to 1 selection on groups over 50)</p>
+							<p>(Always available for 50 or less people. Please limit to 1 selection on groups over 50)</p>
 						</th>
 						<th valign="top">
 							<h4>Quantity</h4>
@@ -266,8 +266,6 @@
 					</tr>
 				</tbody></table>
 
-				<p>&nbsp;</p>
-
 				<div class="col-xs-12" id="catering-menu-desserts">
 					<h3>Desserts</h3>
 					<h4>$1.50 each</h4>
@@ -287,32 +285,25 @@
 					</div>
 				</div>
 			</div>
-		</form>
-		<span class="col-sm-2 hidden-xs"></span>
-	</div>
-
-	<div class="row">
-		<div class="col-sm-2 hidden-xs"></div>
-		<div class="col-sm-8 col-xs-12 text-center bubble">
-			<span id="total-container">
+			<span id="total-container" class="text-center">
 				<span class="row">
-					<span class="col-xs-12">
-						<button type="button" id="calculate-total" class="btn btn-primary">Calculate Total</button> | $<span id="total">0.00</span>
+					<span class="col-xs-12" id="display-total">
+						<button type="button" id="calculate-total" class="btn btn-primary btn-lg">Calculate Total</button> | $<span id="total">0.00</span>
 					</span>
 				</span>
 				<span class="row">
 					<span class="col-xs-6 text-left">
-						<input type="button" id="submit-button" class="btn btn-success" value="Submit" />
+						<input type="button" id="submit-button" class="btn btn-success btn-lg" value="Submit" />
 					</span>
 					<span class="col-xs-6 text-right">
-						<button type="button" id="reset-button" class="btn btn-warning">Reset</button>
+						<button type="button" id="reset-button" class="btn btn-warning btn-lg">Reset</button>
 					</span>
 					<div id="test-message"></div>
 				</span>
 			</span>
 			<span class="col-xs-12" id="message" class="message"></span>
-		</div>
-		<div class="col-sm-2 hidden-xs"></div>
+		</form>
+		<span class="col-sm-2 hidden-xs"></span>
 	</div>
 
 	<div class="row">

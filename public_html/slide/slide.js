@@ -53,7 +53,6 @@ $(document).ready(function(){
         }
         else if ($(el).hasClass("slide-module-left"))
         {
-          console.log("in here");
           $(el).addClass("come-in-left");
         }
       } 

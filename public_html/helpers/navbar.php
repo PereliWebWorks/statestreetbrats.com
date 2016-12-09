@@ -5,8 +5,8 @@
       "Catering" => "/catering.php",
       "Party Reservations" => "/party-reservations.php",
       "FAQ" => "/faq.php",
-      "Employment" => "/index.php#apply",
-      "Contact" => "/index.php#contact-info-container"
+      "Employment" => "/employment.php",
+      "Contact" => "/contact.php"
   );
 
   $currPage = $_SERVER["PHP_SELF"];

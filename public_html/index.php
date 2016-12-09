@@ -20,10 +20,10 @@
 				<div class="sub-bubble">
 					<h2 class="col-xs-12 text-center">Open 11am to 2am</h2>
 					<span class="col-xs-12 text-center">
-						<a href="#" class="col-xs-6 text-center">
+						<a href="#" class="col-md-6 col-xs-12 text-center">
 							<h3 class="btn btn-success btn-lg text-center">Menu</h3>
 						</a>
-						<a href="#" class="col-xs-6 text-center">
+						<a href="#" class="col-md-6 col-xs-12 text-center">
 							<h3 class="btn btn-success btn-lg text-center">Contact</h3>
 						</a>
 					</span>
@@ -65,7 +65,7 @@
 			<h1 class="col-xs-12 text-center"><?= ucfirst($day) ?>'s Specials</h1>
 			<img src="images/bratman.png" class="col-md-2 hidden-xs hidden-sm img-responsive" />
 			<span class="col-md-8 col-xs-12">
-				<span class="col-xs-12">
+				<span class="col-xs-12" id="specials-info-container">
 					<ul class="col-xs-12">
 					<?php
 						$query = "SELECT text FROM specials WHERE day=:day";
@@ -175,27 +175,12 @@
 			</span>
 		</div>
 
-
+		<span id="apply-link"></span>
 		<div class="row bubble slide-module-bottom" id="apply">
-			<h1 class="text-center col-xs-12">Want to work for State Street Brats?</h1>
-			<div class="col-xs-12 col-md-7">
-				
-				<div class="col-xs-12" id="call-for-employees">
-				If you're interested in working for State Street Brats, you can apply online. Don't worry about calling or emailing us. Our hiring process is 100% third party and online! 
-				</div>
-
-				<div class="col-xs-12 text-center">
-					<br/>
-					<a href="http://statestreetbrats.companycareersite.com/">
-						<input type="button" class="btn btn-success btn-lg" value="Apply Today!" />
-					</a>
-				</div>
-			</div>
-			<div class="col-md-5 hidden-xs hidden-sm">
-				<img src="images/employees.jpeg" class="img-responsive body-image"/>
-			</div>
+			<?php require_once("helpers/applicationInfo.php"); ?>
 		</div>
 
+		<span id="contact-link"></span>
 		<div class="row bubble slide-module-bottom" id="contact-info-container">
 			<?php require_once("helpers/contactInfo.php"); ?>
 		</div>

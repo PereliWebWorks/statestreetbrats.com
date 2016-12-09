@@ -32,6 +32,11 @@
 
 	<!-- global custom syle -->
 	<link href="globalStyle.css" rel="stylesheet" type="text/css" />
+	<script>
+	$(function(){
+		$("a[href^=http]").attr({ "target":"_blank"});
+	});
+	</script>
 </head>
 <body>
 	<?php
