@@ -12,7 +12,7 @@
 
 *[data-neon] {
 	font-family: Neon_Regular;
-	font-size:60px;
+	/*font-size:60px;*/
 }
 
 *[data-neon='basic'], *[data-neon='custom'] span {

@@ -16,7 +16,12 @@
 				<img src="images/employeeWithLiquor.jpg" class="img-responsive body-image" />
 			</span>
 			<span class="col-md-8 col-xs-12">
-				<img src="images/vectors/ribbons_badges/banner1.png" class="col-xs-12 img-responsive banner-image" />
+				<!--<img src="images/vectors/ribbons_badges/banner1.png" class="col-xs-12 img-responsive banner-image" />-->
+				<h1 class="col-xs-12 text-center huge" data-neon="custom">
+					St<span data-neon-params="blinks">a</span>te
+					Street
+					Brats
+				</h1>
 				<div class="sub-bubble">
 					<h2 class="col-xs-12 text-center">Open 11am to 2am</h2>
 					<span class="col-xs-12 text-center">
@@ -62,7 +67,9 @@
 				$jd = cal_to_jd(CAL_GREGORIAN,date("m"),date("d"),date("Y"));
 				$day = strtolower(jddayofweek($jd,1));
 			?>
-			<h1 class="col-xs-12 text-center"><?= ucfirst($day) ?>'s Specials</h1>
+			<h1 class="col-xs-12 text-center huge" data-neon="custom">
+				<?= ucfirst($day) ?>'s Specia<span data-neon-params="blinks">l</span>s
+			</h1>
 			<img src="images/bratman.png" class="col-md-2 hidden-xs hidden-sm img-responsive" />
 			<span class="col-md-8 col-xs-12">
 				<span class="col-xs-12" id="specials-info-container">
@@ -135,8 +142,8 @@
 		<div class="row bubble slide-module-bottom">
 			<img src="images/BuckyBadger.png" class="col-md-4 hidden-xs hidden-sm img-responsive" />
 			<span class="col-md-8 col-xs-12">
-				<h1 class="col-xs-12 text-center" data-neon="custom" style="color: red;">
-					Ma<span data-neon-params="blinks" style="color: red;">d</span>ison 
+				<h1 class="col-xs-12 text-center huge" data-neon="custom">
+					Ma<span data-neon-params="blinks">d</span>ison 
 					Love
 				</h1>
 				<div class="col-xs-12 slider-container">
@@ -169,7 +176,7 @@
 							?>
 								<li class="review">
 									<i class="review-text">
-										<?= $quotes[$i] ?>
+										"<?= $quotes[$i] ?>"
 									</i>
 									<br/>
 									<span class="review-name">

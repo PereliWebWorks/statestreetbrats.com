@@ -1,6 +1,7 @@
 $black: #111;
 $white: #ccc;
 $mainTextColor: #dcc;
+$neonRed: red;
 /* General */
 
 @font-face{
@@ -28,6 +29,10 @@ body
   background-attachment: fixed;
   overflow: scroll;
 
+}
+
+h1.huge{
+  font-size: 50px;
 }
 
 .main-content
@@ -123,6 +128,19 @@ label{
   opacity: .9;
   padding-top: 1em;
   color: #ccc;
+}
+
+
+
+
+
+/* Neon */
+
+*[data-neon] {
+  color: $neonRed;
+  *[data-neon-params="blinks"] {
+    color: $neonRed;
+  }
 }
 
 
