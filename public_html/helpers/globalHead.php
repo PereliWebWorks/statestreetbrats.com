@@ -29,10 +29,10 @@
     <link href="unslider/unslider-master/dist/css/unslider-dots.css" type="text/css" rel="stylesheet" />
 
     <!-- slide -->
+    <!--
     <link href="slide/slide.css" type="text/css" rel="stylesheet" />
     <script src="slide/slide.js"></script>
-
-
+    -->
 
 	<!-- global custom syle -->
 	<link href="globalStyle.css" rel="stylesheet" type="text/css" />
@@ -42,11 +42,12 @@
 	});
 	</script>
 
-	   <!-- Neon -->
-	   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+	<!-- Neon -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
     <link href="neon/css/neon.css" rel="stylesheet">
     <script type="text/javascript" src="neon/js/jquery.getRgb.js"></script>
     <script type="text/javascript" src="neon/js/jquery.neon.js"></script>
+    <script src="neon/js/simpleNeon.js"></script>
     <script>$(function() {$.initNeon()});</script>
 </head>
 <body>

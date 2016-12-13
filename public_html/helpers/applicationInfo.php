@@ -1,5 +1,5 @@
 
-<h1 class="text-center col-xs-12">Want to work for State Street Brats?</h1>
+<h1 class="text-center col-xs-12 neon-sign">Want to work for State Street Brats?</h1>
 <div class="col-xs-12 col-md-7">
 	
 	<div class="col-xs-12" id="call-for-employees">
