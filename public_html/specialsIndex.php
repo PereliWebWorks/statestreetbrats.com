@@ -33,8 +33,8 @@
 <?php require_once("helpers/contentStart.php") ?>
 
 <div class="row">
-	<div class="col-xs-3"></div>
-	<div class="col-xs-6">
+	<div class="col-md-3 hidden-xs"></div>
+	<div class="col-md-6 col-xs-12">
 		<div class="row bubble">
 			<h2 class="col-xs-12">Add New Special</h2>
 			<div class="col-xs-12">
@@ -88,7 +88,7 @@
 			</table>
 		</div>
 	</div>
-	<div class="col-xs-3"></div>
+	<div class="col-md-3 hidden-xs"></div>
 </div>
 
 <?php require_once("helpers/contentEnd.php"); ?>

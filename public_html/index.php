@@ -2,7 +2,7 @@
 <?php require_once("helpers/connectToDB.php"); ?>
 
 <?php require_once("helpers/socialMediaIcons.php"); ?>
-<?php require_once("helpers/headerSlider.php"); ?>
+<?php //require_once("helpers/headerSlider.php"); ?>
 
 
 <?php require_once ("helpers/contentStart.php"); ?>
@@ -83,7 +83,11 @@
 					</ul>
 					<span class="col-xs-12" id="all-specials-container">
 						<span id="all-specials" class="col-xs-12">
-							<h3 class="col-xs-12 text-center">All Specials</h3>
+
+							<h3 class="col-xs-12 text-center" data-neon="custom">
+								All Specials
+							</h3>
+
 							<?php
 								$days = array("monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday");
 								for ($i = 0 ; $i < sizeof($days) ; $i++) :
@@ -127,10 +131,14 @@
 		</div>
 
 
+
 		<div class="row bubble slide-module-bottom">
 			<img src="images/BuckyBadger.png" class="col-md-4 hidden-xs hidden-sm img-responsive" />
 			<span class="col-md-8 col-xs-12">
-				<h1 class="col-xs-12 text-center">Madison Loves State Street Brats</h1>
+				<h1 class="col-xs-12 text-center" data-neon="custom" style="color: red;">
+					Ma<span data-neon-params="blinks" style="color: red;">d</span>ison 
+					Love
+				</h1>
 				<div class="col-xs-12 slider-container">
 					<div id="review-slider">
 						<ul>
@@ -189,7 +197,6 @@
 
 
 
-
 	<span class="col-md-4 hidden-xs slide-module-bottom">
 		<div class="bubble row">
 			            <a class="twitter-timeline"  href="https://twitter.com/search?q=%40statestbrats" data-widget-id="800423506945146880"
@@ -207,11 +214,10 @@
 
 
 
-
 <!-- END CONTENT -->
 <?php require_once("helpers/contentEnd.php");?>
 
-<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
 
 <script src="unslider/unslider-master/dist/js/unslider-min.js"></script>
 <script>

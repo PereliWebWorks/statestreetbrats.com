@@ -1,9 +1,27 @@
 $black: #111;
-$white: #ddd;
+$white: #ccc;
+$mainTextColor: #dcc;
 /* General */
+
+@font-face{
+  font-family: oldgate;
+  src: url("fonts/oldgatelaneoutline/OldGateLaneNF.ttf");
+}
+
+@font-face{
+  font-family: radioRanch;
+  src: url("fonts/radioranch.regular.ttf");
+}
+
+@font-face{
+  font-family: arbutus;
+  src: url("fonts/arbutus-slab.regular.ttf");
+}
+
 
 body
 {
+  font-family: arbutus, Fallback, monospace;
   padding-top: 50px;
   background-color: transparent;
   background-image: url("images/bricks.jpg");
@@ -20,7 +38,7 @@ body
 .bubble
 {
   display: block;
-  color: $white;
+  color: $mainTextColor;
   background-color: $black;
   background-color: rgba($black, .8);
   border-radius: 7px;
