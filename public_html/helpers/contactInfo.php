@@ -5,8 +5,8 @@
 		<h2>Madison, WI</h2>
 		<h3>608-255-5544</h3>
 		<h3 class="hidden-xs">statestreetbrats@yahoo.com</h3>
-		<span class="col-xs-12 text-center visible-xs">
-			<a href="mailto:statestreetbrats@yahoo.com">
+		<span class="col-xs-8 col-xs-offset-2 text-center visible-xs" style="margin-bottom: 2em;">
+			<a href="mailto:statestreetbrats@yahoo.com" style="margin-bottom: 2em;">
 				<img class="img-responsive" src="images/mail.png" />
 			</a>
 		</span>

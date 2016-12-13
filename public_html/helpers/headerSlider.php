@@ -6,12 +6,12 @@
             $numImages = 7;
             $captions = array(
                 "Welcome to State Street Brats",
-                "Caption 2",
-                "Caption 3",
-                "Caption 4",
-                "Caption 5",
-                "Caption 6",
-                "Caption 7",
+                "The Greatest Bar in the Universe",
+                "",
+                "",
+                "",
+                "",
+                "",
             ); 
             for ($i = 1 ; $i <= $numImages ; $i++) :
             ?>
