@@ -7,15 +7,14 @@
 
 <?php require_once ("helpers/contentStart.php"); ?>
 <!-- CONTENT -->
-
-	
+<!-- Title and hours -->
 <span class="row">
-	<span class="col-md-8 col-xs-12">
-		<div class="row bubble slide-module-bottom">
-			<span class="col-md-4 hidden-xs hidden-sm">
+	<span class="col-xs-12">
+		<div class="row bubble">
+			<span class="col-md-3 hidden-xs hidden-sm">
 				<img src="images/employeeWithLiquor.jpg" class="img-responsive body-image" />
 			</span>
-			<span class="col-md-8 col-xs-12">
+			<span class="col-md-6 col-xs-12">
 				<!--<img src="images/vectors/ribbons_badges/banner1.png" class="col-xs-12 img-responsive banner-image" />-->
 				<h1 class="col-xs-12 text-center neon-sign huge">
 					State Street Brats
@@ -23,11 +22,11 @@
 				<div class="sub-bubble">
 					<h2 class="col-xs-12 text-center">Open 11am to 2am</h2>
 					<span class="col-xs-12 text-center">
-						<a href="#" class="col-md-6 col-xs-12 text-center">
-							<h3 class="btn btn-success btn-lg text-center">Menu</h3>
+						<a href="menu.php" class="col-md-6 col-xs-12 text-center">
+							<h3 class="btn btn-danger btn-lg text-center">Menu</h3>
 						</a>
-						<a href="#" class="col-md-6 col-xs-12 text-center">
-							<h3 class="btn btn-success btn-lg text-center">Contact</h3>
+						<a href="contact.php" class="col-md-6 col-xs-12 text-center">
+							<h3 class="btn btn-danger btn-lg text-center">Contact</h3>
 						</a>
 					</span>
 				</div>
@@ -58,8 +57,15 @@
 					</span>
 				</div>
 			</span>
+			<span class="col-md-3 hidden-xs hidden-sm">
+				<img src="images/crowd.jpeg" class="img-responsive body-image" />
+			</span>
 		</div>
-
+	</span>
+</span>	
+<span class="row">
+	<span class="col-md-8 col-xs-12">
+		<!-- Specials -->
 		<div class="row bubble slide-module-bottom">
 			<?php 
 				$jd = cal_to_jd(CAL_GREGORIAN,date("m"),date("d"),date("Y"));
@@ -89,7 +95,7 @@
 					<span class="col-xs-12" id="all-specials-container">
 						<span id="all-specials" class="col-xs-12">
 
-							<h3 class="col-xs-12 text-center" data-neon="custom">
+							<h3 class="col-xs-12 text-center">
 								All Specials
 							</h3>
 
@@ -111,8 +117,8 @@
 								<?php endfor ?>
 						</span>
 						<span class="col-xs-12 text-center">
-							<input type="button" class="btn btn-default" value="Show All Specials" id="show-specials-btn"/>
-							<input type="button" class="btn btn-default" value="Hide Specials" id="hide-specials-btn" />
+							<input type="button" class="btn btn-danger" value="Show All Specials" id="show-specials-btn"/>
+							<input type="button" class="btn btn-danger" value="Hide Specials" id="hide-specials-btn" />
 						</span>
 						<style>
 							#all-specials, #hide-specials-btn{display:none;}
@@ -134,9 +140,7 @@
 			</span>
 			<img src="images/bratman_reversed.png" class="col-md-2 hidden-xs hidden-sm img-responsive" />
 		</div>
-
-
-
+		<!-- Reviews -->
 		<div class="row bubble slide-module-bottom">
 			<img src="images/BuckyBadger.png" class="col-md-4 hidden-xs hidden-sm img-responsive" />
 			<span class="col-md-8 col-xs-12">
@@ -186,26 +190,21 @@
 				</div>
 			</span>
 		</div>
-
-		<span id="apply-link"></span>
+		<!-- Employment -->
 		<div class="row bubble slide-module-bottom" id="apply">
 			<?php require_once("helpers/applicationInfo.php"); ?>
 		</div>
-
-		<span id="contact-link"></span>
+		<!-- Contact -->
 		<div class="row bubble slide-module-bottom" id="contact-info-container">
 			<?php require_once("helpers/contactInfo.php"); ?>
 		</div>
-
 	</span>
-
-
-
+	<!-- Twitter -->
 	<span class="col-md-4 hidden-xs slide-module-bottom">
 		<div class="bubble row">
 			            <a class="twitter-timeline"  href="https://twitter.com/search?q=%40statestbrats" data-widget-id="800423506945146880"
 			            data-chrome="transparent"
-			            data-tweet-limit="6">Tweets about @statestbrats</a>
+			            data-tweet-limit="5">Tweets about @statestbrats</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
           
 		</div>
@@ -233,7 +232,7 @@
 				infinite: true
 			});
 		});
-	</script>
+</script>
 
 <?php require_once("helpers/globalFoot.php"); ?>
 

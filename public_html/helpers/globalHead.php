@@ -1,6 +1,17 @@
 <?php require_once("global.php"); ?>
 <html>
 <head>
+
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon.ico/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="favicon.ico/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="favicon.ico/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="favicon.ico/manifest.json">
+	<link rel="mask-icon" href="favicon.ico/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+	<!-- end favicon -->
+
+	<title>State Street Brats<?= isset($titleAddition) ? " | $titleAddition" : "" ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>

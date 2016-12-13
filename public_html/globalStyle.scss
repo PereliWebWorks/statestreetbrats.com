@@ -31,8 +31,11 @@ body
 
 }
 
-h1.huge{
-  font-size: 50px;
+@media only screen and (min-width : 480px) {
+  h1.huge{
+    font-weight: bold;
+    font-size: 50px;
+  }
 }
 
 .main-content
@@ -45,11 +48,17 @@ h1.huge{
   display: block;
   color: $mainTextColor;
   background-color: $black;
-  background-color: rgba($black, .8);
+  background-color: rgba($black, .85);
   border-radius: 7px;
   border: 1px solid black;
   padding: 1em;
   margin: 1em 0em 1em 0em;
+  box-shadow: 0px 0px 6px 1px #c00;
+}
+
+.col-pad-0{
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .body-image

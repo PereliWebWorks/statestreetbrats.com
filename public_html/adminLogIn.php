@@ -1,3 +1,4 @@
+<?php $titleAddition = "Admin Log In"; ?>
 <?php
 	require_once("helpers/global.php");
 	if (isset($_SESSION["logged_in"]))

@@ -1,3 +1,4 @@
+<?php $titleAddition = "Specials Index"; ?>
 <?php require_once("helpers/globalHead.php"); ?>
 <?php require_once("helpers/requireLogIn.php"); ?>
 <?php require_once("helpers/connectToDB.php"); ?>

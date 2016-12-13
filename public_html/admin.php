@@ -1,3 +1,4 @@
+<?php $titleAddition = "Admin"; ?>
 <?php
 	require_once("helpers/requireLogIn.php");
 ?>

@@ -1,30 +1,33 @@
+<?php $titleAddition = "Catering"; ?>
 <?php require_once("helpers/globalHead.php"); ?>
 <?php require_once("helpers/contentStart.php"); ?>
 
 	<div class="row">
 		<span class="col-sm-2 hidden-xs"></span>
-		<span class="col-sm-8 col-xs-12 bubble">
-			<h1>Catering</h1>
-			<p>All of our delicious selections brought to YOUR HOME!</p>
-			<p>
-				State Street Brats can handle events from 20 to 2,000 (yes 2,000) people. We provide quality food at affordable prices. You get the same great service that you would receive in our restaurant, at the site of your choosing. We are ready to serve your group, large or small, be it a family reunion, company picnic or social club. Our catering crew is ready to go to your home, office, or one of Madison's beautiful parks. We also offer "in house" catering. If you can't find a suitable location, you can bring your group to State Street Brats.  Generally, we can arrange pick ups of large orders (over 20 people) with 2 hours notice. Large orders for delivery require 48 hours notice so we can schedule workers.  Large orders for onsite catering must be placed at least ten days before the event, as we schedule ten days in advance and cannot guarantee we will have workers available to staff such large events once the schedule is posted for a given period.  Small groups (under 20 people) can generally be delivered by staff on the shift with 2 hours notice.
-			</p>
-			<p>
-				State Street Brats offers traditional Wisconsin tailgate at competitive prices. State Street Brats does not have any set-up fees, delivery charges, or cleanup costs. The only thing you pay for is the food you and your guests eat. All utensils, plates and condiments are included in the sandwiches prices. You will never find hidden costs when your party is catered by State Street Brats.
-			</p>
-			<p>
-				Your event can be tailored to your budget! You can pre-order a set amount of sandwiches and sides and know in advance what the event will cost! 
-			</p>
-			<p>Or . . . </p>
-			<p>You can set the menu as you like and you will only be charged for what you actually go through at the event (i.e. not 12.00 per person regardless of age). This works great when you are not sure of the side item people might eat. </p>
-			<p>Or . . . </p>
-			<p>
-				You can ask for tickets and hand them out to guests as YOU see fit. Each ticket will get them a certain sandwich and side for one helping only. If they want more, they have to get a ticket from YOU! 
-			</p>
-			<h3>Curious about catering costs?</h3>
-			<p>
-				Fill in item quantities in the form bellow to see an instant price estimate. Like what you see? Enter your details at the bottom and we'll contact you about catering your event!
-			</p>
+		<span class="col-sm-8 col-pad-0 col-xs-12">
+			<h1 class="col-xs-12 text-center huge neon-sign bubble">Catering</h1>
+			<span class="col-xs-12 bubble">
+				<p>All of our delicious selections brought to YOUR HOME!</p>
+				<p>
+					State Street Brats can handle events from 20 to 2,000 (yes 2,000) people. We provide quality food at affordable prices. You get the same great service that you would receive in our restaurant, at the site of your choosing. We are ready to serve your group, large or small, be it a family reunion, company picnic or social club. Our catering crew is ready to go to your home, office, or one of Madison's beautiful parks. We also offer "in house" catering. If you can't find a suitable location, you can bring your group to State Street Brats.  Generally, we can arrange pick ups of large orders (over 20 people) with 2 hours notice. Large orders for delivery require 48 hours notice so we can schedule workers.  Large orders for onsite catering must be placed at least ten days before the event, as we schedule ten days in advance and cannot guarantee we will have workers available to staff such large events once the schedule is posted for a given period.  Small groups (under 20 people) can generally be delivered by staff on the shift with 2 hours notice.
+				</p>
+				<p>
+					State Street Brats offers traditional Wisconsin tailgate at competitive prices. State Street Brats does not have any set-up fees, delivery charges, or cleanup costs. The only thing you pay for is the food you and your guests eat. All utensils, plates and condiments are included in the sandwiches prices. You will never find hidden costs when your party is catered by State Street Brats.
+				</p>
+				<p>
+					Your event can be tailored to your budget! You can pre-order a set amount of sandwiches and sides and know in advance what the event will cost! 
+				</p>
+				<p>Or . . . </p>
+				<p>You can set the menu as you like and you will only be charged for what you actually go through at the event (i.e. not 12.00 per person regardless of age). This works great when you are not sure of the side item people might eat. </p>
+				<p>Or . . . </p>
+				<p>
+					You can ask for tickets and hand them out to guests as YOU see fit. Each ticket will get them a certain sandwich and side for one helping only. If they want more, they have to get a ticket from YOU! 
+				</p>
+				<h3>Curious about catering costs?</h3>
+				<p>
+					Fill in item quantities in the form bellow to see an instant price estimate. Like what you see? Enter your details at the bottom and we'll contact you about catering your event!
+				</p>
+			</span>
 		</span>
 		<span class="col-sm-2 hidden-xs"></span>
 	</div>

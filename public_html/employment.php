@@ -1,3 +1,4 @@
+<?php $titleAddition = "Employment"; ?>
 <?php require_once("helpers/globalHead.php"); ?>
 <?php require_once("helpers/contentStart.php"); ?>
 

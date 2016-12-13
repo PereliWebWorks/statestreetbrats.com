@@ -1,5 +1,5 @@
 
-<h1 class="text-center col-xs-12 neon-sign">Want to work for State Street Brats?</h1>
+<h1 class="text-center col-xs-12 huge neon-sign">Join the Team</h1>
 <div class="col-xs-12 col-md-7">
 	
 	<div class="col-xs-12" id="call-for-employees">
@@ -9,7 +9,7 @@
 	<div class="col-xs-12 text-center">
 		<br/>
 		<a href="http://statestreetbrats.companycareersite.com/">
-			<input type="button" class="btn btn-success btn-lg" value="Apply Today!" />
+			<input type="button" class="btn btn-danger btn-lg" value="Apply Today!" />
 		</a>
 	</div>
 </div>

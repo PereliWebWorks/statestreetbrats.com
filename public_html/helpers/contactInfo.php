@@ -1,9 +1,15 @@
 <span id="contact-information" style="min-height: 100%;">
 	<span class="col-md-6 col-xs-12">
+		<h1 class="huge neon-sign">Contact</h1>
 		<h2>603 State St</h2>
 		<h2>Madison, WI</h2>
 		<h3>608-255-5544</h3>
-		<h3>statestreetbrats@yahoo.com</h3>
+		<h3 class="hidden-xs">statestreetbrats@yahoo.com</h3>
+		<span class="col-xs-12 text-center visible-xs">
+			<a href="mailto:statestreetbrats@yahoo.com">
+				<img class="img-responsive" src="images/mail.png" />
+			</a>
+		</span>
 	</span>
 	<span class="col-md-6 col-xs-12">
 		<div id="map" class="col-xs-12">
