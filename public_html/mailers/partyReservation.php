@@ -1,6 +1,6 @@
 
 <?php
-	
+	$nL = "<div>&nbsp;</div>";
 	//Mail the contents of the post array to state street brats. Send a confirmation email to the users email as well
 	$sSBMsg; //The message being sent to state street brats;
 	$sSBEmail = "drewpereli@gmail.com";
@@ -10,7 +10,11 @@
 	$customerEmail = $_POST["party-email"];
 	$customerSubject = "Thank you for requesting a party reservation with State Street Brats!";
 
-	$headers = "From: StateStreetBrats@104.236.118.215";
+	$headers  = 'MIME-Version: 1.0' . "\r\n";
+	$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+	$headers .= 'From: StateStreetBrats@104.236.118.215' . "\r\n";
+	$customerHeaders = $headers . 'Reply-To: statestreetbrats@yahoo.com' . "\r\n";
+	$ssbHeaders = $headers . 'Reply-To: ' . $customerEmail . "\r\n";
 	
 	$valueNames = array(
 		"name",
@@ -37,25 +41,38 @@
 	);
 
 	//First sent the ssb email
-	$sSBMsg = "New request for a party reservation.\n";
-	$info = ""; //A string containing the form info submitted
+	$sSBMsg = "<h2>New request for a party reservation.</h2>";
+	$info = "<div>"; //A string containing the form info submitted
 	for ($i = 0 ; $i < sizeof($titles) ; $i++)
 	{
 		$valueName = $valueNames[$i];
 		$value = $_POST["party-" . $valueName];
 		$title = $titles[$i];
-		$info .= $title . ": " . $value . "\n";
+		if (!empty($value))
+		{
+			$info .= "<div>" . $title . ": " . $value . "</div>";
+		}
+		elseif (in_array($title, ["name", "email", "date", "time", "number", "privacy"]))//If a required field is empty
+		{
+			echo "error";
+			die();
+		}
 	}
+	$info .= "</div>";
 	$sSBMsg .= $info;
+	$sSBMsg .= "${nL}<b>Send a message to the creater of this order by responding to this email.</b>"
+			. "$nL $nL"
+			. "<div>If you have any questions about this email system, contact Drew Pereli at drewpereli@gmail.com</div>";
 
-	$customerMsg = "Your party reservation request has been sent.\n"
-		. "If any of the following information is incorrect, please email us at "
-		. "StateStreetBrats@yahoo.com and let us know!\n";
+	$customerMsg = "<h2>Thanks for requesting State Street Brats for your party!</h2>"
+		. "If any of the following information is incorrect, respond to "
+		. "this email and let us know.$nL $nL";
 	$customerMsg .= $info;
-	$customerMsg .= "Thank you!\n--State Street Brats";
+	$customerMsg .= "${nL}Thank you!${nL}--State Street Brats";
 
-	mail($sSBEmail, $sSBSubject, $sSBMsg, $headers);
-	mail($customerEmail, $customerSubject, $customerMsg, $headers);
+	mail($sSBEmail, $sSBSubject, $sSBMsg, $ssbHeaders);
+	mail($customerEmail, $customerSubject, $customerMsg, $customerHeaders);
+	echo "success";
 
 ?>
 

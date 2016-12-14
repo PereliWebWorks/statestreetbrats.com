@@ -34,7 +34,7 @@
 	</div>
 	<div class="form-group">
 		<label class="form-control-label" for="party-privacy">This party is</label><br/>
-		<input type="radio" class="party-field" name="party-privacy" value="private"> Private<br/>
+		<input type="radio" class="party-field" name="party-privacy" value="private" checked="checked"> Private<br/>
 		<input type="radio" class="party-field" name="party-privacy" value="semi-private"> Semi-private<br/>
 		<input type="radio" class="party-field" name="party-privacy" value="public"> Public
 	</div>
@@ -98,21 +98,42 @@ function submitPartyReservationForm()
 	//Send a request to the mailer, if the input is valid
 	if (validInput)
 	{
-		$("#party-form-response").html("Your party reservation request has been sent.")
-			.removeClass("alert-danger").addClass("alert-success");
+		$("#party-form-response").html("Processing...")
+			.removeClass("hidden")
+			.removeClass("alert-danger")
+			.addClass("alert-success");
 		$.ajax({
 			type: "POST",
 			url: "/mailers/partyReservation.php",
 			data: values,
 		}).done(function(data){
-			//$("#response").html(data);
+			data = $.trim(data);
+			if (data == "success")
+			{
+				$("#party-form-response").html(`
+					Your party reservation request has been succesfully sent! 
+					Please check your email for a confirmation message.`)
+					.removeClass("hidden")
+					.removeClass("alert-danger")
+					.addClass("alert-success");
+			}
+			else
+			{
+				$("#party-form-response").html(`
+					There was an error. Please try again later.`)
+					.removeClass("hidden")
+					.removeClass("alert-success")
+					.addClass("alert-danger");
+			}
 		});
 	}
 	else
 	{
 		//Set the "response" message to "invalid input" or whatever
 		$("#party-form-response").html("You must fill in all required fields.")
-			.removeClass("hidden").removeClass("alert-success").addClass("alert-danger");
+			.removeClass("hidden")
+			.removeClass("alert-success")
+			.addClass("alert-danger");
 	}
 }
 
