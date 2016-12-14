@@ -1,7 +1,9 @@
 $black: #111;
 $white: #ccc;
 $mainTextColor: #dcc;
+$red: red;
 $neonRed: red;
+$defaultFontFamily: arbutus;
 /* General */
 
 @font-face{
@@ -20,9 +22,10 @@ $neonRed: red;
 }
 
 
+
 body
 {
-  font-family: arbutus, Fallback, monospace;
+  font-family: $defaultFontFamily;
   padding-top: 50px;
   background-color: transparent;
   background-image: url("images/bricks.jpg");
@@ -255,17 +258,56 @@ label{
 }
 
 
-/*Tabs*/
-#tabs li
-{
-  margin-left: 7%;
-  margin-right: 7%;
-  width: 19%;
-  a {
-    width: 100%;
+/*Tabs/Accordion*/
+@mixin uiTabActive {
+  background-color: rgba(220, 20, 20, .5);
+  border: inherit;
+}
+
+@mixin uiBody {
+  background-color: rgba(200, 200, 200, .15);
+  font-family: $defaultFontFamily;
+  div{
+    color: $white;
   }
 }
 
+#tabs 
+{
+  @include uiBody;
+  ul{
+    background-color: rgba(150, 150, 150, .5); 
+  }
+  li{
+    background-color: rgba(50, 50, 50, .5);
+    margin-left: 7%;
+    margin-right: 7%;
+    width: 19%;
+    a {
+      width: 100%;
+      color: $white;
+    }
+    &.ui-tabs-active{
+      @include uiTabActive;
+    }
+  }
+}
+
+
+#accordion
+{
+  @include uiBody;
+  div{
+    background-color: rgba(50, 50, 50, .5);
+  }
+  h3{
+    color: $white;
+    background-color: rgba(150, 150, 150, .5);
+    &.ui-state-active{
+      @include uiTabActive;
+    }
+  }
+}
 
 
 

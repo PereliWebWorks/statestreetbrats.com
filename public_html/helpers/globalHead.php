@@ -21,7 +21,7 @@
 	<link href="jQuery_ui/jquery-ui.structure.min.css" type="text/css" rel="stylesheet" />
 	<link href="jQuery_ui/jquery-ui.theme.min.css" type="text/css" rel="stylesheet" />
 	<script src="jQuery_ui/jquery-ui.min.js"></script>
-
+	
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="custom_bootstrap/css/bootstrap.min.css">
@@ -45,7 +45,14 @@
     <script src="slide/slide.js"></script>
     -->
 
-	<!-- global custom syle -->
+	<!-- Neon -->
+    <link href="neon/css/neon.css" rel="stylesheet">
+    <script type="text/javascript" src="neon/js/jquery.getRgb.js"></script>
+    <script type="text/javascript" src="neon/js/jquery.neon.js"></script>
+    <script src="neon/js/simpleNeon.js"></script>
+    <script>$(function() {$.initNeon()});</script>
+
+    <!-- global custom syle -->
 	<link href="globalStyle.css" rel="stylesheet" type="text/css" />
 	<script>
 	$(function(){
@@ -53,13 +60,6 @@
 	});
 	</script>
 
-	<!-- Neon -->
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
-    <link href="neon/css/neon.css" rel="stylesheet">
-    <script type="text/javascript" src="neon/js/jquery.getRgb.js"></script>
-    <script type="text/javascript" src="neon/js/jquery.neon.js"></script>
-    <script src="neon/js/simpleNeon.js"></script>
-    <script>$(function() {$.initNeon()});</script>
 </head>
 <body>
 	<?php

@@ -458,8 +458,9 @@
 			{
 				$("#total").html(totalPrice.toFixed(2));
 				returnTable +=
-				`
-						<tr><td colspan="3" style="text-align: right;"><b>Total Cost:</b> $${totalPrice}</td></tr>
+				`		
+						<tr><td colspan="3"</td></tr>
+						<tr><td colspan="3" style="text-align: right;"><h5><b>Total Cost:</b> $${totalPrice}</h5></td></tr>
 					</table>
 				`;
 				return returnTable;
