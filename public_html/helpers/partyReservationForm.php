@@ -14,7 +14,7 @@
 	<div class="form-group">
 		<label class="form-control-label" for="party-date">Date (required)</label>
 		<input type="date" class="form-control party-field required" id="party-date" name="party-date" />
-		  <script>
+		  <script>= uM
 		  $( function() {
 		    $( "#party-date" ).datepicker();
 		  } );
