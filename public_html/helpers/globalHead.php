@@ -20,7 +20,7 @@
 	<link href="jQuery_ui/jquery-ui.min.css" type="text/css" rel="stylesheet" />
 	<link href="jQuery_ui/jquery-ui.structure.min.css" type="text/css" rel="stylesheet" />
 	<link href="jQuery_ui/jquery-ui.theme.min.css" type="text/css" rel="stylesheet" />
-	<script src="jQuery_ui/jquery-ui.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 	
 
 	<!-- Bootstrap -->
@@ -57,11 +57,32 @@
 	<script>
 	$(function(){
 		$("a[href^=http]").attr({ "target":"_blank"});
+		    $( "#dialog" ).dialog({
+		      autoOpen: false,
+		    });
+		 	$(".progressive-night").append("&nbsp;<span class='glyphicon glyphicon-question-sign'></span>");
+		    $( ".progressive-night .glyphicon-question-sign" ).on( "click", function(e) {
+		    	var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+		    	var x = Math.round($(this).offset().left);
+   				var y = Math.round($(this).offset().top);
+		     	$( "#dialog" ).dialog( "open" );
+   				$("#dialog").parent().css("position", "absolute").css("top", y + "px").css("left", x + "px");
+   				document.documentElement.scrollTop = document.body.scrollTop = scrollTop;
+		    });
 	});
 	</script>
 
 </head>
 <body>
+	<div id="dialog">
+		<h5>Progressive Night Rules</h5>
+			<ul>
+				<li>9 - 10pm: 5 drinks for $5.</li>
+				<li>10 - 11pm: 4 drinks for $5.</li>
+				<li>11 - 12pm: 3 drinks for $5.</li>
+				<li>12 - close: 2 drinks for $5.</li>
+			</ul>
+	</div>
 	<?php
 		require_once ("helpers/navbar.php");
 	?>

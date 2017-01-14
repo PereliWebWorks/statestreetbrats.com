@@ -38,7 +38,7 @@
 			else
 			{
 				logIn($username);
-				$newUrl = HOST_URL . "admin.php";
+				$newUrl = HOST_URL . "/admin.php";
 				header('Location: ' . $newUrl);
 				die();
 			}
@@ -94,7 +94,7 @@
 					$stmt->execute();
 					//The log in
 					logIn($username);
-					$newUrl = HOST_URL . "admin.php";
+					$newUrl = HOST_URL . "/admin.php";
 					header('Location: ' . $newUrl);
 				}
 			}

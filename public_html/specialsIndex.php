@@ -4,7 +4,7 @@
 <?php require_once("helpers/connectToDB.php"); ?>
 
 <?php
-	$selectedDay = "monday";
+	$selectedDay = "monday"; //The default selected day on the select drop down
 	if (isset($_POST["add"])) //If adding a special
 	{
 		$special = $_POST["text"];

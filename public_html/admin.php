@@ -5,7 +5,7 @@
 
 <?php require_once("helpers/globalHead.php"); ?>
 <script>
-	window.location.replace("<?=HOST_URL?>specialsIndex.php");
+	window.location.replace("<?=HOST_URL?>/specialsIndex.php");
 </script>
 
 	<div class="row">
