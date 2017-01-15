@@ -14,19 +14,22 @@
 	<title>State Street Brats<?= isset($titleAddition) ? " | $titleAddition" : "" ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	
+	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-
-	<!-- jquery ui -->
-	<link href="jQuery_ui/jquery-ui.min.css" type="text/css" rel="stylesheet" />
-	<link href="jQuery_ui/jquery-ui.structure.min.css" type="text/css" rel="stylesheet" />
-	<link href="jQuery_ui/jquery-ui.theme.min.css" type="text/css" rel="stylesheet" />
-	<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-	
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="custom_bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="custom_bootstrap/css/bootstrap-theme.min.css">
 	<script src="custom_bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- jquery ui -->
+	<link rel="stylesheet" href="jquery_ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="jquery_ui/jquery-ui.structure.min.css">
+	<link rel="stylesheet" href="jquery_ui/jquery-ui.theme.min.css">
+	<script src="jquery_ui/jquery-ui.min.js"></script>
+	
+
+	
 
 	<!-- Ninja Slider -->
 	<!-- Used for the image slider -->
@@ -63,7 +66,8 @@
 		 	$(".progressive-night").append("&nbsp;<span class='glyphicon glyphicon-question-sign'></span>");
 		    $( ".progressive-night .glyphicon-question-sign" ).on( "click", function(e) {
 		    	var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-		    	var x = Math.round($(this).offset().left);
+		    	//var x = Math.round($(this).offset().left);
+		    	var x = 20;
    				var y = Math.round($(this).offset().top);
 		     	$( "#dialog" ).dialog( "open" );
    				$("#dialog").parent().css("position", "absolute").css("top", y + "px").css("left", x + "px");
