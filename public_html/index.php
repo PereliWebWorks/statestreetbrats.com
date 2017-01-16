@@ -1,8 +1,8 @@
 <?php require_once("helpers/globalHead.php"); ?>
 <?php require_once("helpers/connectToDB.php"); ?>
 
-<?php //require_once("helpers/socialMediaIcons.php"); ?>
-<?php //require_once("helpers/headerSlider.php"); ?>
+<?php require_once("helpers/socialMediaIcons.php"); ?>
+<?php require_once("helpers/headerSlider.php"); ?>
 
 
 <?php require_once ("helpers/contentStart.php"); ?>
