@@ -1,6 +1,6 @@
 <?php
   $links = array(
-     // "History" => "/history.php",
+      "History" => "/history.php",
       "Menu" => "/menu.php",
       "Catering" => "/catering.php",
       "Party Reservations" => "/party-reservations.php",

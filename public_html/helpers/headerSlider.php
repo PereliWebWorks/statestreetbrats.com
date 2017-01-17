@@ -3,10 +3,10 @@
     <div class="slider-inner">
         <ul>
             <?php 
-            $numImages = 7;
+            $numImages = 5;
             $captions = array(
                 "Welcome to State Street Brats",
-                "The Greatest Bar in the Universe",
+                "",
                 "",
                 "",
                 "",

@@ -3,7 +3,7 @@
 	
 	//Mail the contents of the post array to state street brats. Send a confirmation email to the users email as well
 	$sSBMsg; //The message being sent to state street brats;
-	$sSBEmail = "drewpereli@gmail.com";
+	$sSBEmail = "statestreetbrats@yahoo.com";
 	$sSBSubject = "New Catering Request";
 
 	$customerMsg; //The message being sent to the customer
@@ -13,7 +13,7 @@
 	
 	$headers  = 'MIME-Version: 1.0' . "\r\n";
 	$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-	$headers .= 'From: StateStreetBrats@104.236.118.215' . "\r\n";
+	$headers .= 'From: StateStreetBrats@statestreetbrats.drewpereli.com' . "\r\n";
 	$customerHeaders = $headers . 'Reply-To: statestreetbrats@yahoo.com' . "\r\n";
 	$ssbHeaders = $headers . 'Reply-To: ' . $customerEmail . "\r\n";
 	
