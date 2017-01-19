@@ -1,4 +1,5 @@
 <?php $titleAddition = "History"; ?>
+<?php $metaDescription = "The long and interesting history of State Street Brats."; ?>
 <?php require_once("helpers/globalHead.php"); ?>
 <?php require_once("helpers/contentStart.php"); ?>
 
@@ -8,7 +9,9 @@
 		<h1 class="col-xs-12 text-center huge neon-sign bubble">History</h1>
 		<span class="col-xs-12 bubble">
 			<div class="history-section col-xs-12">
-				<img class="pull-right img-responsive history-img body-image" src="images/history/1.jpg"/>
+				<img class="pull-right img-responsive history-img body-image" 
+						src="images/history/1.jpg"
+						atl="old brathaus"/>
 				<span class="">
 				Our ‘World Famous’ Red Brat was originally made by a local Madison
 
@@ -28,7 +31,8 @@
 				</span>
 			</div>
 			<div class="history-section col-xs-12">
-				<img class="pull-left img-responsive history-img" src="images/history/2.jpg"/>
+				<img class="pull-left img-responsive history-img" src="images/history/2.jpg"
+					alt="old state street brats"/>
 				<span>
 				Unfortunately, George Bishop passed away and the recipe was part of
 
@@ -63,7 +67,8 @@
 					
 			</div>
 			<div class="history-section col-xs-12">
-				<img class="pull-right img-responsive history-img" src="images/history/3.jpg"/>
+				<img class="pull-right img-responsive history-img" src="images/history/3.jpg"
+					alt="old state street brats bar"/>
 				<span>
 
 				State Street Brats would like to think as a business they are standing on the

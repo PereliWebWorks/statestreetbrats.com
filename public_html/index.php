@@ -1,3 +1,4 @@
+<?php $metaDescription = "Welcome to State Street Brats! Madison's best sports bar."; ?>
 <?php require_once("helpers/globalHead.php"); ?>
 <?php require_once("helpers/connectToDB.php"); ?>
 
@@ -12,7 +13,7 @@
 	<span class="col-xs-12">
 		<div class="row bubble">
 			<span class="col-md-3 hidden-xs hidden-sm">
-				<img src="images/employeeWithLiquor.jpg" class="img-responsive body-image" />
+				<img src="images/employeeWithLiquor.jpg" class="img-responsive body-image" alt="state street brats employee with liquor"/>
 			</span>
 			<span class="col-md-6 col-xs-12">
 				<!--<img src="images/vectors/ribbons_badges/banner1.png" class="col-xs-12 img-responsive banner-image" />-->
@@ -34,31 +35,31 @@
 					<span class="row">
 						<span class="col-xs-6 text-center">
 							<a href="https://www.facebook.com/statestreetbratswisco">
-								<img src="images/social_media_logos/facebook.png" class="img-responsive" />
+								<img src="images/social_media_logos/facebook.png" class="img-responsive" alt="facebook logo"/>
 							</a>
 						</span>
 						<span class="col-xs-6 text-center">
 							<a href="https://twitter.com/StateStBrats">
-								<img src="images/social_media_logos/twitter.png" class="img-responsive" />
+								<img src="images/social_media_logos/twitter.png" class="img-responsive" alt="twitter logo"/>
 							</a>
 						</span>
 					</span>
 					<span class="row">
 						<span class="col-xs-6 text-center">
 							<a href="https://instagram.com/brat_man/">
-								<img src="images/social_media_logos/instagram.png" class="img-responsive" />
+								<img src="images/social_media_logos/instagram.png" class="img-responsive" alt="instagram logo"/>
 							</a>
 						</span>
 						<span class="col-xs-6 text-center">
 							<a href="https://www.pinterest.com/statestreetbrat/">
-								<img src="images/social_media_logos/pinterest.png" class="img-responsive" />
+								<img src="images/social_media_logos/pinterest.png" class="img-responsive" alt="pinterest logo" />
 							</a>
 						</span>
 					</span>
 				</div>
 			</span>
 			<span class="col-md-3 hidden-xs hidden-sm">
-				<img src="images/crowd.jpeg" class="img-responsive body-image" />
+				<img src="images/crowd.jpeg" class="img-responsive body-image" alt="A crowd of people in state street brats"/>
 			</span>
 		</div>
 	</span>
@@ -74,7 +75,7 @@
 			<h1 class="col-xs-12 text-center huge neon-sign">
 				<?= ucfirst($day) ?>'s Specials
 			</h1>
-			<img src="images/bratman.png" class="col-md-2 hidden-xs hidden-sm img-responsive" />
+			<img src="images/bratman.png" class="col-md-2 hidden-xs hidden-sm img-responsive" alt="state street brats mascot"/>
 			<span class="col-md-8 col-xs-12">
 				<span class="col-xs-12" id="specials-info-container">
 					<ul class="col-xs-12">
@@ -138,11 +139,11 @@
 					</span>
 				</span>
 			</span>
-			<img src="images/bratman_reversed.png" class="col-md-2 hidden-xs hidden-sm img-responsive" />
+			<img src="images/bratman_reversed.png" class="col-md-2 hidden-xs hidden-sm img-responsive" alt="state street brats mascot"/>
 		</div>
 		<!-- Reviews -->
 		<div class="row bubble slide-module-bottom">
-			<img src="images/BuckyBadger.png" class="col-md-4 hidden-xs hidden-sm img-responsive" />
+			<img src="images/BuckyBadger.png" class="col-md-4 hidden-xs hidden-sm img-responsive" alt="bucky badger" />
 			<span class="col-md-8 col-xs-12">
 				<h1 class="col-xs-12 text-center huge neon-sign">
 					Madison Love

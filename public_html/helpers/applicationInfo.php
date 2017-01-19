@@ -14,5 +14,5 @@
 	</div>
 </div>
 <div class="col-md-5 hidden-xs hidden-sm">
-	<img src="images/employees.jpeg" class="img-responsive body-image"/>
+	<img src="images/employees.jpeg" class="img-responsive body-image" alt="state street brats employees"/>
 </div>

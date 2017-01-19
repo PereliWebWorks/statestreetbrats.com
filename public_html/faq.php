@@ -1,4 +1,5 @@
 <?php $titleAddition = "FAQ"; ?>
+<?php $metaDescription = "For all your State Street Brats related inquiries."; ?>
 <?php require_once("helpers/globalHead.php"); ?>
 <?php require_once("helpers/contentStart.php"); ?>
 

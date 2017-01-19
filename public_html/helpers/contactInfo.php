@@ -7,7 +7,7 @@
 		<h3 class="hidden-xs">statestreetbrats@yahoo.com</h3>
 		<span class="col-xs-8 col-xs-offset-2 text-center visible-xs" style="margin-bottom: 2em;">
 			<a href="mailto:statestreetbrats@yahoo.com" style="margin-bottom: 2em;">
-				<img class="img-responsive" src="images/mail.png" />
+				<img class="img-responsive" src="images/mail.png" alt="email button"/>
 			</a>
 		</span>
 	</span>

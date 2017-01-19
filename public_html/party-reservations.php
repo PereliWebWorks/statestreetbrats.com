@@ -1,4 +1,5 @@
 <?php $titleAddition = "Party Reservation"; ?>
+<?php $metaDescription = "Let State Street Brats take care of you! Reserve our location for you party."; ?>
 <?php require_once("helpers/globalHead.php"); ?>
 <?php require_once("helpers/contentStart.php"); ?>
 

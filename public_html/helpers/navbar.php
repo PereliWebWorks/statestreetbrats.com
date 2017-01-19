@@ -23,7 +23,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="index.php">
-        <img src="images/logo.png" id="navbarBrandImage"/>
+        <img src="images/logo.png" id="navbarBrandImage" alt="state street brats logo"/>
       </a>
     </div>
 

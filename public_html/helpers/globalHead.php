@@ -11,8 +11,11 @@
 	<meta name="theme-color" content="#ffffff">
 	<!-- end favicon -->
 
-	<title>State Street Brats<?= isset($titleAddition) ? " | $titleAddition" : "" ?></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>State Street Brats<?= isset($titleAddition) ? " | $titleAddition" : ""; ?></title>
+	<meta name="description" content="<?= isset($metaDescription) ? $metaDescription : ''; ?>" />
+	<meta name="robots" content="index,follow" />
 	
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>

@@ -1,4 +1,5 @@
 <?php $titleAddition = "Catering"; ?>
+<?php $metaDescription = "All of the delicious selections of State Street Brats brought to your event!"; ?>
 <?php require_once("helpers/globalHead.php"); ?>
 <?php require_once("helpers/contentStart.php"); ?>
 
@@ -84,6 +85,7 @@
 					<tr class="hidden-xs">
 						<th colspan="3">
 							<h4>Tavern Sandwiches</h4>
+							<div><small>Gluten free buns are available for sandwiches.</small></div>
 						</th>
 						<th>
 							<h4>Quantity</h4>
@@ -103,9 +105,9 @@
 						<td class="catering-description">
 							Classic smoked beef brat. Sliced butterfly style and grilled perfection.</td>
 						<td>
-							$5.25</td>
+							$5.50</td>
 						<td>
-							<input id="red-brat" name="catering[red-brat]" data-price="5.25" size="1" value="0" type="number"></td>
+							<input id="red-brat" name="catering[red-brat]" data-price="5.50" size="1" value="0" type="number"></td>
 					</tr>
 					<tr>
 						<td>
@@ -113,9 +115,9 @@
 						<td class="catering-description">
 							</td>
 						<td>
-							$5.25</td>
+							$5.50</td>
 						<td>
-							<input id="white-brat" name="catering[white-brat]"  data-price="5.25" size="4" value="0" type="number"></td>
+							<input id="white-brat" name="catering[white-brat]"  data-price="5.50" size="4" value="0" type="number"></td>
 					</tr>
 					<tr>
 						<td>
@@ -123,9 +125,9 @@
 						<td class="catering-description">
 							Same great tasting burger that's served on State Street...served on your street.</td>
 						<td>
-							$6.25</td>
+							$6.50</td>
 						<td>
-							<input id="cheese-burger" name="catering[cheese-burger]" data-price="6.25" size="4" value="0" type="number"></td>
+							<input id="cheese-burger" name="catering[cheese-burger]" data-price="6.50" size="4" value="0" type="number"></td>
 					</tr>
 					<tr>
 						<td>
@@ -140,23 +142,13 @@
 
 					<tr>
 						<td>
-							Chicken Cheddar Brat</td>
-						<td class="catering-description">
-							</td>
-						<td>
-							$5.25</td>
-						<td>
-							<input id="chicken-cheddar-brat" name="catering[chicken-cheddar-brat]" data-price="5.25" size="4" value="0" type="number"></td>
-					</tr>
-					<tr>
-						<td>
 							Garden Burger</td>
 						<td class="catering-description">
 							For the vegetarians out there!</td>
 						<td>
-							$5.00</td>
+							$6.00</td>
 						<td>
-							<input id="veggie-burger" name="catering[veggie-burger]" data-price="5.00" size="4" value="0" type="number"></td>
+							<input id="veggie-burger" name="catering[veggie-burger]" data-price="6.00" size="4" value="0" type="number"></td>
 					</tr>
 					<tr>
 						<td>
@@ -164,9 +156,9 @@
 						<td class="catering-description">
 							Kids Love em!</td>
 						<td>
-							$4.50</td>
+							$5.00</td>
 						<td>
-							<input id="kids-hotdog" name="catering[kids-hot-dog]" data-price="4.50" size="4" value="0" type="number"></td>
+							<input id="kids-hotdog" name="catering[kids-hot-dog]" data-price="5.00" size="4" value="0" type="number"></td>
 					</tr>
 					<tr>
 						<td>
@@ -203,9 +195,9 @@
 						<td class="catering-description">
 							A pretzel-infused patty with cheese on a tasty pretzel roll</td>
 						<td>
-							$7.00</td>
+							$7.50</td>
 						<td>
-							<input id="pretzel-burger" name="catering[pretzel-burger]" data-price="7.00" size="4" value="0" type="number"></td>
+							<input id="pretzel-burger" name="catering[pretzel-burger]" data-price="7.50" size="4" value="0" type="number"></td>
 					</tr>
 					<tr>
 						<td>
@@ -213,19 +205,9 @@
 						<td class="catering-description">
 							</td>
 						<td>
-							$8.25</td>
+							$8.75</td>
 						<td>
-							<input id="curd-burger" name="catering[curd-burger]" data-price="8.25" size="4" value="0" type="number"></td>
-					</tr>
-					<tr>
-						<td>
-							Mushroom &amp; Swiss Chicken</td>
-						<td class="catering-description">
-							</td>
-						<td>
-							$8.00</td>
-						<td>
-							<input id="mushroom-swiss-chicken" name="catering[mushroom-swiss-chicken]" data-price="8.00" size="4" value="0" type="number"></td>
+							<input id="curd-burger" name="catering[curd-burger]" data-price="8.75" size="4" value="0" type="number"></td>
 					</tr>
 					<tr>
 						<td>
@@ -233,40 +215,22 @@
 						<td class="catering-description">
 							Alumni favorite since 1936. Same great steak, different cow.</td>
 						<td>
-							$7.00</td>
+							$8.00</td>
 						<td>
-							<input id="ribeye-steak-sandwich" name="catering[ribeye-steak-sandwich]" data-price="7.00" size="4" value="0" type="number"></td>
+							<input id="ribeye-steak-sandwich" name="catering[ribeye-steak-sandwich]" data-price="8.00" size="4" value="0" type="number"></td>
 					</tr>
-					<tr>
-						<td>
-							Bacon Cheese Burger</td>
-						<td class="catering-description">
-							</td>
-						<td>
-							$7.25</td>
-						<td>
-							<input id="bacon-cheese-burger" name="catering[bacon-cheese-burger]" data-price="7.25" size="4" value="0" type="number"></td>
-					</tr>
+					
 					<tr>
 						<td>
 							Bacon Swiss Chicken</td>
 						<td class="catering-description">
 							A tasty topping of bacon and swiss are sure to please your palate.</td>
 						<td>
-							$7.25</td>
-						<td>
-							<input id="bacon-swiss-chicken" name="catering[bacon-swiss-chicken]" data-price="7.25" size="4" value="0" type="number"></td>
-					</tr>
-					<tr>
-						<td>
-							Mushroom &amp; Swiss Burger</td>
-						<td class="catering-description">
-							A tasty topping of mushroom and swiss are sure to please your palate.</td>
-						<td>
 							$7.50</td>
 						<td>
-							<input id="mushroom-swiss-burger" name="catering[mushroom-swiss-burger]" data-price="7.50" size="4" value="0" data-com.agilebits.onepassword.user-edited="yes" type="number"></td>
+							<input id="bacon-swiss-chicken" name="catering[bacon-swiss-chicken]" data-price="7.50" size="4" value="0" type="number"></td>
 					</tr>
+					
 				</tbody></table>
 
 				<div class="col-xs-12" id="catering-menu-desserts">
@@ -279,9 +243,9 @@
 				<div class="col-xs-12" id="catering-menu-sides">
 					<h3>Available Side Orders</h3>
 					<div>Choice of:</div>
-					<input checked="checked" name="catering[number-of-sides]" class="number-of-sides" data-price="2.50" value="2" type="radio"> 2: $2.50<br/>
-					<input name="catering[number-of-sides]" class="number-of-sides" data-price="2.75" value="3" type="radio"> 3: $2.75<br/>
-					<input name="catering[number-of-sides]" class="number-of-sides" data-price="3.25" value="4" type="radio"> 4: $3.25<br/>
+					<input checked="checked" name="catering[number-of-sides]" class="number-of-sides" data-price="2.50" value="2" type="radio"> 2: $2.50 per person<br/>
+					<input name="catering[number-of-sides]" class="number-of-sides" data-price="2.75" value="3" type="radio"> 3: $2.75 per person<br/>
+					<input name="catering[number-of-sides]" class="number-of-sides" data-price="3.25" value="4" type="radio"> 4: $3.25 per person<br/>
 					<br/>
 					<div class="col-xs-12">
 					Side items including but not limited to Tavern Chips, Baked Beans, Potato Salad, Pasta Salad, Cut Fruit Trays, Cut Veggie Trays, Pretzels, Corn on the Cob (minimum 24 cobs), and more, please ask.
@@ -291,7 +255,7 @@
 			<span id="total-container" class="text-center">
 				<span class="row">
 					<span class="col-xs-12" id="display-total">
-						<button type="button" id="calculate-total" class="btn btn-primary btn-lg">Calculate Total</button> | $<span id="total">0.00</span>
+						<button type="button" id="calculate-total" class="btn btn-primary btn-lg">Calculate Total</button> | $<span id="total">0.00</span>*
 					</span>
 				</span>
 				<span class="row">
@@ -312,6 +276,7 @@
 	<div class="row">
 		<div class="col-sm-2 hidden-xs"></div>
 		<div class="col-sm-8 col-xs-12 bubble">
+			<p>* This is only an estimate of the cost. The actual cost for your event may be different. Event catering costs an additional $150/hour for every hour past 90 minutes. Events outside Madison/Verona/Middleton/Sun Prarie  will require a trip charge of $150.00. All on site catering events have a $500.00 minimum charge as a deposit which will be deducted from the final invoice.
 			<h3 class="text-danger">Please Note</h3>
 			<p>
 				This is only a portion of what we are capable of catering. Special requests are no problem at State Street Brats. We will work to ensure that you and your guests will eat exactly the right food for the occasion. From vegetarian options to Cajun seasoned chicken to hot dogs for the kids, State Street Brats can take care of your catering needs, just ask!
@@ -388,6 +353,14 @@
 		//Also returns an object with the order info, for convenience.
 		function calculateTotal()
 		{
+			var numberAttending = $("#catering-number").val();
+			if (isEmpty(numberAttending))
+			{
+				$("#message").addClass("bg-danger").addClass("text-danger")
+					.html("Please specify the number of people attending.");
+				return false;
+			}
+			numberAttending = Number(numberAttending);
 			$("#message").removeClass("bg-danger").removeClass("text-danger").html("");
 			var returnTable = 
 			`
@@ -433,17 +406,17 @@
 			//Validate radio buttons
 			var checkedInput = $("input[name='catering[number-of-sides]']:checked")[0];
 			var sidePrice = Number(checkedInput.dataset.price);
-			var sidePriceTotal = sidePrice * totalSandwiches;
+			var sidePriceTotal = sidePrice * numberAttending;
 			totalPrice += sidePriceTotal;
 			//Add the side to the return object
 			returnTable += 
 			`
-				<tr><th>Sides Per Meal</th><th>Number of Meals</th><th>Cost</th></tr>
+				<tr><th>Sides Per Person</th><th>Number of People</th><th>Cost</th></tr>
 			`;
-			var sidesPerMeal = Number(checkedInput.value);
+			var sidesPerPerson = Number(checkedInput.value);
 			sidePrice = sidePrice.toFixed(2);
-			returnTable += `<td>${sidesPerMeal} ($${sidePrice} per meal)</td>`;
-			returnTable += `<td>${totalSandwiches}</td>`;
+			returnTable += `<td>${sidesPerPerson} ($${sidePrice} per meal)</td>`;
+			returnTable += `<td>${numberAttending}</td>`;
 			returnTable += `<td>$${sidePriceTotal}</td>`;
 
 			$("#total").html(hasError ? "-.--" : totalPrice);

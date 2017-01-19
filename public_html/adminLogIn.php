@@ -1,4 +1,5 @@
 <?php $titleAddition = "Admin Log In"; ?>
+<?php $metaDescription = "Log in or sign up as an admin."; ?>
 <?php
 	require_once("helpers/global.php");
 	if (isset($_SESSION["logged_in"]))
@@ -159,8 +160,6 @@
 					<?= $response["sign-up"]["message"]; ?>
 				</div>
 			<?php endif ?>
-		</div>
-		<div class="row bubble">
 		</div>
 	</div>
 

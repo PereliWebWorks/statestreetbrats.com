@@ -1,4 +1,5 @@
 <?php $titleAddition = "Contact"; ?>
+<?php $metaDescription = "Get in touch with State Street Brats via email, phone, or in person."; ?>
 <?php require_once("helpers/globalHead.php"); ?>
 <?php require_once("helpers/contentStart.php"); ?>
 
