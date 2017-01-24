@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>bratpartytest</title>
+<style type="text/css">
+<!--
+body {
+	background-color: #800000;
+}
+.contacttext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+}
+.style7 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #FFFFFF;
+}
+-->
+</style>
+<script type="text/javascript">
+<!--
+function MM_validateForm() { //v4.0
+  if (document.getElementById){
+    var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+    for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=document.getElementById(args[i]);
+      if (val) { nm=val.name; if ((val=val.value)!="") {
+        if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+          if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+        } else if (test!='R') { num = parseFloat(val);
+          if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+          if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+            min=test.substring(8,p); max=test.substring(p+1);
+            if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+      } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+    } if (errors) alert('The following error(s) occurred:\n'+errors);
+    document.MM_returnValue = (errors == '');
+} }
+//-->
+</script>
+</head>
+
+<body>
+<p><img src="header.jpg" width="973" height="150" /></p>
+<p class="style7">&nbsp;</p>
+<p>&nbsp;</p>
+<p><font color="#FFFFFF" face="Arial Rounded MT Bold" size="6"><u><b>Speak to the Brat!</b></u></font></p>
+<p>&nbsp;</p>
+<p><u><strong><font color="#FFFFFF" size="6" face="Arial Rounded MT Bold">Leave your comments for Bratman below!</font></strong></u></p>
+<p>&nbsp;</p>  
+<p>&nbsp;</p>  
+<form id="bratparty" name="bratparty" method="post" action="_gdForm/webformmailer.asp">  
+  <label class="contacttext"></label><p><br />  
+  </p>  
+  <p>  
+    Comments: 
+      <textarea rows="7" name="Comments:" cols="100"></textarea>  
+  </p>  
+  <p class="contacttext">&nbsp;</p>  
+  <p class="contacttext">  
+    <label>  
+    <input name="SUBMIT" type="submit" id="SUBMIT" onclick="MM_validateForm('Name','','R','Party Date','','R','Party Time','','R','Group Name or THeme','','R','Attendees','','RisNum','Email','','NisEmail','Phone','','R');return document.MM_returnValue" value="Submit" />  
+    </label>  
+    <label>  
+    <input type="reset" name="Reset" id="Reset" value="Reset" />  
+    </label>  
+</p>  
+  <p class="contacttext">  
+    <input name="reciepient" type="hidden" id="reciepient" value="bratman@statestreetbrats.com" />  
+    <input name="redirect" type="hidden" id="redirect" value="commentconfirmation.htm" />  
+  </p>  
+</form>  
+</body>  
+</html>  

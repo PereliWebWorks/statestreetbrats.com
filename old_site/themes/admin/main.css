@@ -1,0 +1,163 @@
+html, body {
+	padding: 0px;
+	border-style: none;
+	margin: 0px;
+	height: 100%;
+}
+body {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+img { border-style: none; }
+
+
+#adminHead {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 60px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #dddddd;
+	background-image: url("mythiccms_headbg.png");
+}
+#adminHead h1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	margin: 0;
+	padding: 0;
+}
+#adminHead .title {
+	margin: 0;
+	margin-top: 5px;
+	padding: 0;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+}
+
+#adminMenu {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+}
+
+#adminMenu a {
+	padding: 5px;
+	padding-top: 2px;
+	padding-bottom: 0px;
+	color: #000000;
+	text-decoration: none;
+	background-color: #eeeeee;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #dddddd;
+	border-bottom: 0px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+#adminMenu a.selected {
+	padding-top: 5px;
+	padding-bottom: 1px;
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #ffffff;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #dddddd;
+	border-bottom: 0px;
+}
+
+#panelList {
+	position: absolute;
+	top: 61px;
+	bottom: 0px;
+	left: 0px;
+	width: 35%;
+	overflow: auto;
+}
+
+#panelEdit {
+	position: absolute;
+	top: 61px;
+	bottom: 0px;
+	right: 0px;
+	width: 65%;
+}
+
+.adminLayout { margin-top: 75px }
+
+/* adminList */
+
+.adminList {
+	width: 100%;
+	border: 0;
+	color: #000000;
+	border-bottom-style: solid;
+	border-bottom-width: 5px;
+	border-bottom-color: #dddddd;
+	-moz-border-radius: 8px;
+}
+
+.adminList tr,
+.adminList th,
+.adminList td {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+.adminList td:last-child {
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: #dddddd;
+}
+
+.adminList th {
+	height: 19px;
+	text-align: left;
+	border-style: outset;
+	border-width: 1px;
+	border-color: #dcdcdc;
+	background-color: #dcdcdc;
+}
+
+.adminList .selectedRow {
+	background-color: #bfdaff;
+}
+
+.adminList .row1 {
+	background-color: #ffffff;
+}
+
+.adminList .row0 {
+	background-color: #eeeeee;
+}
+
+.adminList a {
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	color: #000000;
+}
+
+.adminList tbody {
+	height: 95%;
+}
+
+/* adminForm */
+
+.adminForm {
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}

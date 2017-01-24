@@ -1,0 +1,11 @@
+body {
+	text-align: center;
+}
+
+#theme-body-main {
+	text-align: left;
+}
+
+#bratman-says {
+	behavior:url('/scripts/border-radius.htc'); /* border-radius */
+}

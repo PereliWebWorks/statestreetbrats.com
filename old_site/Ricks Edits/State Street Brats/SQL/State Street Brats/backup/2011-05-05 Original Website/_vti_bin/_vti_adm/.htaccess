@@ -1,0 +1,18 @@
+# -FrontPage-
+
+Options None
+
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+require group administrators
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+AuthType Basic
+AuthName www.statestreetbrats.com
+AuthUserFile /var/chroot/home/content/S/a/u/Sausageman/html/_vti_pvt/service.pwd
+AuthGroupFile /var/chroot/home/content/S/a/u/Sausageman/html/_vti_pvt/service.grp
