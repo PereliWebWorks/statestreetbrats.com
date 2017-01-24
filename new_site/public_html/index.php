@@ -46,7 +46,7 @@
 					</span>
 					<span class="row">
 						<span class="col-xs-6 text-center">
-							<a href="https://instagram.com/brat_man/">
+							<a href="https://www.instagram.com/statestbrats/">
 								<img src="images/social_media_logos/instagram.png" class="img-responsive" alt="instagram logo"/>
 							</a>
 						</span>
@@ -203,11 +203,18 @@
 	<!-- Twitter -->
 	<span class="col-md-4 hidden-xs slide-module-bottom">
 		<div class="bubble row">
+
+						<a class="twitter-timeline" 
+							data-theme="dark" 
+							data-chrome="transparent"
+							data-tweet-limit="5"
+							href="https://twitter.com/StateStBrats">Tweets by StateStBrats</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+						<!-- Old twitter feed 
 			            <a class="twitter-timeline"  href="https://twitter.com/search?q=%40statestbrats" data-widget-id="800423506945146880"
 			            data-chrome="transparent"
 			            data-tweet-limit="5">Tweets about @statestbrats</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          
+          -->
 		</div>
 	</span>
 </span>

@@ -9,7 +9,7 @@
 			<img src="images/social_media_logos/twitter.png" alt="twitter logo" />
 		</a>
 		<br />
-		<a href="https://www.instagram.com/explore/locations/1199261/">
+		<a href="https://www.instagram.com/statestbrats/">
 			<img src="images/social_media_logos/instagram.png" alt="instagram logo" />
 		</a>
 		<br />
